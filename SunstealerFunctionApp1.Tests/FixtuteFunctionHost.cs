@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
 
+namespace Sunslealer.FunctionApp1.Tests;
+
 /// <summary>
 /// The FixtureFunctionHost creates a instance of the SunstealerFunctionApp1 Function Host that allows Azure Function Framework to be tested via XUnit Tests.
 /// </summary>
