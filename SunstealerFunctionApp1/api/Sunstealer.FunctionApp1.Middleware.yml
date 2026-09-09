@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.Middleware
+  commentId: N:Sunstealer.FunctionApp1.Middleware
+  id: Sunstealer.FunctionApp1.Middleware
+  children:
+  - Sunstealer.FunctionApp1.Middleware.CallContext
+  - Sunstealer.FunctionApp1.Middleware.ContextMiddleware
+  - Sunstealer.FunctionApp1.Middleware.Flow
+  - Sunstealer.FunctionApp1.Middleware.HttpUtils
+  langs:
+  - csharp
+  - vb
+  name: Sunstealer.FunctionApp1.Middleware
+  nameWithType: Sunstealer.FunctionApp1.Middleware
+  fullName: Sunstealer.FunctionApp1.Middleware
+  type: Namespace
+  assemblies:
+  - SunstealerFunctionApp1
+references:
+- uid: Sunstealer.FunctionApp1.Middleware.CallContext
+  commentId: T:Sunstealer.FunctionApp1.Middleware.CallContext
+  href: Sunstealer.FunctionApp1.Middleware.CallContext.html
+  name: CallContext
+  nameWithType: CallContext
+  fullName: Sunstealer.FunctionApp1.Middleware.CallContext
+- uid: Sunstealer.FunctionApp1.Middleware.ContextMiddleware
+  commentId: T:Sunstealer.FunctionApp1.Middleware.ContextMiddleware
+  href: Sunstealer.FunctionApp1.Middleware.ContextMiddleware.html
+  name: ContextMiddleware
+  nameWithType: ContextMiddleware
+  fullName: Sunstealer.FunctionApp1.Middleware.ContextMiddleware
+- uid: Sunstealer.FunctionApp1.Middleware.Flow
+  commentId: T:Sunstealer.FunctionApp1.Middleware.Flow
+  href: Sunstealer.FunctionApp1.Middleware.Flow.html
+  name: Flow
+  nameWithType: Flow
+  fullName: Sunstealer.FunctionApp1.Middleware.Flow
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils
+  commentId: T:Sunstealer.FunctionApp1.Middleware.HttpUtils
+  href: Sunstealer.FunctionApp1.Middleware.HttpUtils.html
+  name: HttpUtils
+  nameWithType: HttpUtils
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils

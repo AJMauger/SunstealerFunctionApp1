@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.OpenApi
+  commentId: N:Sunstealer.FunctionApp1.OpenApi
+  id: Sunstealer.FunctionApp1.OpenApi
+  children:
+  - Sunstealer.FunctionApp1.OpenApi.DocumentFilter
+  - Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions
+  langs:
+  - csharp
+  - vb
+  name: Sunstealer.FunctionApp1.OpenApi
+  nameWithType: Sunstealer.FunctionApp1.OpenApi
+  fullName: Sunstealer.FunctionApp1.OpenApi
+  type: Namespace
+  assemblies:
+  - SunstealerFunctionApp1
+references:
+- uid: Sunstealer.FunctionApp1.OpenApi.DocumentFilter
+  commentId: T:Sunstealer.FunctionApp1.OpenApi.DocumentFilter
+  href: Sunstealer.FunctionApp1.OpenApi.DocumentFilter.html
+  name: DocumentFilter
+  nameWithType: DocumentFilter
+  fullName: Sunstealer.FunctionApp1.OpenApi.DocumentFilter
+- uid: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions
+  commentId: T:Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions
+  href: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.html
+  name: OpenApiConfigurationOptions
+  nameWithType: OpenApiConfigurationOptions
+  fullName: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions

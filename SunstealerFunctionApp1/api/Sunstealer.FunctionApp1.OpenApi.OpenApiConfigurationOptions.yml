@@ -1,0 +1,881 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions
+  commentId: T:Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions
+  id: OpenApiConfigurationOptions
+  parent: Sunstealer.FunctionApp1.OpenApi
+  children:
+  - Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.#ctor
+  - Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.Info
+  - Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.OpenApiVersion
+  langs:
+  - csharp
+  - vb
+  name: OpenApiConfigurationOptions
+  nameWithType: OpenApiConfigurationOptions
+  fullName: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions
+  type: Class
+  source:
+    id: OpenApiConfigurationOptions
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\OpenApi\OpenApiCustomUIOptions.cs
+    startLine: 114
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.OpenApi
+  summary: ''
+  example: []
+  syntax:
+    content: 'public class OpenApiConfigurationOptions : DefaultOpenApiConfigurationOptions, IOpenApiConfigurationOptions'
+    content.vb: Public Class OpenApiConfigurationOptions Inherits DefaultOpenApiConfigurationOptions Implements IOpenApiConfigurationOptions
+  inheritance:
+  - System.Object
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.OpenApiConfigurationOptions
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  implements:
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IOpenApiConfigurationOptions
+  inheritedMembers:
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocVersion
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocTitle
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocDescription
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetHostNames
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiVersion
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsFunctionsRuntimeEnvironmentDevelopment
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpForced
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpsForced
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.Servers
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IncludeRequestingHostName
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.ForceHttp
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.ForceHttps
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.DocumentFilters
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.#ctor
+  commentId: M:Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.#ctor
+  id: '#ctor'
+  parent: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions
+  langs:
+  - csharp
+  - vb
+  name: OpenApiConfigurationOptions()
+  nameWithType: OpenApiConfigurationOptions.OpenApiConfigurationOptions()
+  fullName: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.OpenApiConfigurationOptions()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\OpenApi\OpenApiCustomUIOptions.cs
+    startLine: 119
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.OpenApi
+  summary: ''
+  example: []
+  syntax:
+    content: public OpenApiConfigurationOptions()
+    content.vb: Public Sub New()
+  overload: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.#ctor*
+  nameWithType.vb: OpenApiConfigurationOptions.New()
+  fullName.vb: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.New()
+  name.vb: New()
+- uid: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.Info
+  commentId: P:Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.Info
+  id: Info
+  parent: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: OpenApiConfigurationOptions.Info
+  fullName: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.Info
+  type: Property
+  source:
+    id: Info
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\OpenApi\OpenApiCustomUIOptions.cs
+    startLine: 127
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.OpenApi
+  summary: ''
+  example: []
+  syntax:
+    content: public override OpenApiInfo Info { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.OpenApi.Models.OpenApiInfo
+    content.vb: Public Overrides Property Info As OpenApiInfo
+  overridden: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.Info
+  overload: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.Info*
+- uid: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.OpenApiVersion
+  commentId: P:Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.OpenApiVersion
+  id: OpenApiVersion
+  parent: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions
+  langs:
+  - csharp
+  - vb
+  name: OpenApiVersion
+  nameWithType: OpenApiConfigurationOptions.OpenApiVersion
+  fullName: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.OpenApiVersion
+  type: Property
+  source:
+    id: OpenApiVersion
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\OpenApi\OpenApiCustomUIOptions.cs
+    startLine: 137
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.OpenApi
+  summary: ''
+  example: []
+  syntax:
+    content: public override OpenApiVersionType OpenApiVersion { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums.OpenApiVersionType
+    content.vb: Public Overrides Property OpenApiVersion As OpenApiVersionType
+  overridden: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.OpenApiVersion
+  overload: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.OpenApiVersion*
+references:
+- uid: Sunstealer.FunctionApp1.OpenApi
+  commentId: N:Sunstealer.FunctionApp1.OpenApi
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.OpenApi
+  nameWithType: Sunstealer.FunctionApp1.OpenApi
+  fullName: Sunstealer.FunctionApp1.OpenApi
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.OpenApi
+    name: OpenApi
+    href: Sunstealer.FunctionApp1.OpenApi.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.OpenApi
+    name: OpenApi
+    href: Sunstealer.FunctionApp1.OpenApi.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.OpenApiConfigurationOptions
+  commentId: T:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.OpenApiConfigurationOptions
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations
+  isExternal: true
+  name: OpenApiConfigurationOptions
+  nameWithType: OpenApiConfigurationOptions
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.OpenApiConfigurationOptions
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  commentId: T:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations
+  isExternal: true
+  name: DefaultOpenApiConfigurationOptions
+  nameWithType: DefaultOpenApiConfigurationOptions
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IOpenApiConfigurationOptions
+  commentId: T:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IOpenApiConfigurationOptions
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  isExternal: true
+  name: IOpenApiConfigurationOptions
+  nameWithType: IOpenApiConfigurationOptions
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IOpenApiConfigurationOptions
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocVersion
+  commentId: M:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocVersion
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: GetOpenApiDocVersion()
+  nameWithType: DefaultOpenApiConfigurationOptions.GetOpenApiDocVersion()
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocVersion()
+  spec.csharp:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocVersion
+    name: GetOpenApiDocVersion
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocVersion
+    name: GetOpenApiDocVersion
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocTitle
+  commentId: M:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocTitle
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: GetOpenApiDocTitle()
+  nameWithType: DefaultOpenApiConfigurationOptions.GetOpenApiDocTitle()
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocTitle()
+  spec.csharp:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocTitle
+    name: GetOpenApiDocTitle
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocTitle
+    name: GetOpenApiDocTitle
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocDescription
+  commentId: M:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocDescription
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: GetOpenApiDocDescription()
+  nameWithType: DefaultOpenApiConfigurationOptions.GetOpenApiDocDescription()
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocDescription()
+  spec.csharp:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocDescription
+    name: GetOpenApiDocDescription
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiDocDescription
+    name: GetOpenApiDocDescription
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetHostNames
+  commentId: M:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetHostNames
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: GetHostNames()
+  nameWithType: DefaultOpenApiConfigurationOptions.GetHostNames()
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetHostNames()
+  spec.csharp:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetHostNames
+    name: GetHostNames
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetHostNames
+    name: GetHostNames
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiVersion
+  commentId: M:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiVersion
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: GetOpenApiVersion()
+  nameWithType: DefaultOpenApiConfigurationOptions.GetOpenApiVersion()
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiVersion()
+  spec.csharp:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiVersion
+    name: GetOpenApiVersion
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.GetOpenApiVersion
+    name: GetOpenApiVersion
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsFunctionsRuntimeEnvironmentDevelopment
+  commentId: M:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsFunctionsRuntimeEnvironmentDevelopment
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: IsFunctionsRuntimeEnvironmentDevelopment()
+  nameWithType: DefaultOpenApiConfigurationOptions.IsFunctionsRuntimeEnvironmentDevelopment()
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsFunctionsRuntimeEnvironmentDevelopment()
+  spec.csharp:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsFunctionsRuntimeEnvironmentDevelopment
+    name: IsFunctionsRuntimeEnvironmentDevelopment
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsFunctionsRuntimeEnvironmentDevelopment
+    name: IsFunctionsRuntimeEnvironmentDevelopment
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpForced
+  commentId: M:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpForced
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: IsHttpForced()
+  nameWithType: DefaultOpenApiConfigurationOptions.IsHttpForced()
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpForced()
+  spec.csharp:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpForced
+    name: IsHttpForced
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpForced
+    name: IsHttpForced
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpsForced
+  commentId: M:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpsForced
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: IsHttpsForced()
+  nameWithType: DefaultOpenApiConfigurationOptions.IsHttpsForced()
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpsForced()
+  spec.csharp:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpsForced
+    name: IsHttpsForced
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IsHttpsForced
+    name: IsHttpsForced
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.Servers
+  commentId: P:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.Servers
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: Servers
+  nameWithType: DefaultOpenApiConfigurationOptions.Servers
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.Servers
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IncludeRequestingHostName
+  commentId: P:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IncludeRequestingHostName
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: IncludeRequestingHostName
+  nameWithType: DefaultOpenApiConfigurationOptions.IncludeRequestingHostName
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.IncludeRequestingHostName
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.ForceHttp
+  commentId: P:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.ForceHttp
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: ForceHttp
+  nameWithType: DefaultOpenApiConfigurationOptions.ForceHttp
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.ForceHttp
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.ForceHttps
+  commentId: P:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.ForceHttps
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: ForceHttps
+  nameWithType: DefaultOpenApiConfigurationOptions.ForceHttps
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.ForceHttps
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.DocumentFilters
+  commentId: P:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.DocumentFilters
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: DocumentFilters
+  nameWithType: DefaultOpenApiConfigurationOptions.DocumentFilters
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.DocumentFilters
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations
+  commentId: N:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations
+  isExternal: true
+  name: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations
+  nameWithType: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure
+    name: Azure
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs
+    name: WebJobs
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core
+    name: Core
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations
+    name: Configurations
+    isExternal: true
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure
+    name: Azure
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs
+    name: WebJobs
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core
+    name: Core
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations
+    name: Configurations
+    isExternal: true
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  commentId: N:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  isExternal: true
+  name: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  nameWithType: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure
+    name: Azure
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs
+    name: WebJobs
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core
+    name: Core
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+    name: Abstractions
+    isExternal: true
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure
+    name: Azure
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs
+    name: WebJobs
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core
+    name: Core
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+    name: Abstractions
+    isExternal: true
+- uid: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.#ctor*
+  commentId: Overload:Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.#ctor
+  href: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.html#Sunstealer_FunctionApp1_OpenApi_OpenApiConfigurationOptions__ctor
+  name: OpenApiConfigurationOptions
+  nameWithType: OpenApiConfigurationOptions.OpenApiConfigurationOptions
+  fullName: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.OpenApiConfigurationOptions
+  nameWithType.vb: OpenApiConfigurationOptions.New
+  fullName.vb: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.New
+  name.vb: New
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.Info
+  commentId: P:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.Info
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: Info
+  nameWithType: DefaultOpenApiConfigurationOptions.Info
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.Info
+- uid: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.Info*
+  commentId: Overload:Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.Info
+  href: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.html#Sunstealer_FunctionApp1_OpenApi_OpenApiConfigurationOptions_Info
+  name: Info
+  nameWithType: OpenApiConfigurationOptions.Info
+  fullName: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.Info
+- uid: Microsoft.OpenApi.Models.OpenApiInfo
+  commentId: T:Microsoft.OpenApi.Models.OpenApiInfo
+  parent: Microsoft.OpenApi.Models
+  isExternal: true
+  href: https://github.com/microsoft/OpenAPI.NET/blob/553061a69b2d8b8b1653f172707409a16f2a9579/src/Microsoft.OpenApi/Models/OpenApiInfo.cs
+  name: OpenApiInfo
+  nameWithType: OpenApiInfo
+  fullName: Microsoft.OpenApi.Models.OpenApiInfo
+- uid: Microsoft.OpenApi.Models
+  commentId: N:Microsoft.OpenApi.Models
+  isExternal: true
+  name: Microsoft.OpenApi.Models
+  nameWithType: Microsoft.OpenApi.Models
+  fullName: Microsoft.OpenApi.Models
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.OpenApi.Models
+    name: Models
+    isExternal: true
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.OpenApi.Models
+    name: Models
+    isExternal: true
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.OpenApiVersion
+  commentId: P:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.OpenApiVersion
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions
+  isExternal: true
+  name: OpenApiVersion
+  nameWithType: DefaultOpenApiConfigurationOptions.OpenApiVersion
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations.DefaultOpenApiConfigurationOptions.OpenApiVersion
+- uid: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.OpenApiVersion*
+  commentId: Overload:Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.OpenApiVersion
+  href: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.html#Sunstealer_FunctionApp1_OpenApi_OpenApiConfigurationOptions_OpenApiVersion
+  name: OpenApiVersion
+  nameWithType: OpenApiConfigurationOptions.OpenApiVersion
+  fullName: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions.OpenApiVersion
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums.OpenApiVersionType
+  commentId: T:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums.OpenApiVersionType
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums
+  isExternal: true
+  name: OpenApiVersionType
+  nameWithType: OpenApiVersionType
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums.OpenApiVersionType
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums
+  commentId: N:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums
+  isExternal: true
+  name: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums
+  nameWithType: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure
+    name: Azure
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs
+    name: WebJobs
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core
+    name: Core
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums
+    name: Enums
+    isExternal: true
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure
+    name: Azure
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs
+    name: WebJobs
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core
+    name: Core
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums
+    name: Enums
+    isExternal: true

@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=4679fd8e-3dc0-4139-8f7a-998cf7fb13a9;IngestionEndpoint=https://canadacentral-1.in.applicationinsights.azure.com/;LiveEndpoint=https://canadacentral.livediagnostics.monitor.azure.com/;ApplicationId=a6c1943e-01f0-44c6-b342-50e9757872d0",
+    "WEBSITE_SITE_NAME": "FunctionApp1",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated"
+  },
+  "ConnectionStrings": {
+    "AppInsightsConnectionString": "InstrumentationKey=2c1c4f57-c90a-4e8e-94a9-2ccb7a4b3013;IngestionEndpoint=https://canadacentral-1.in.applicationinsights.azure.com/;LiveEndpoint=https://canadacentral.livediagnostics.monitor.azure.com/;ApplicationId=1466124b-873d-4171-823e-51a1aa5a0772",
+    "AzureDbConnectionString": "Data Source=AJMWIN11-01\\SQLEXPRESS;Initial Catalog=database1;Integrated Security=True;Column Encryption Setting=Enabled;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite"
+  }
+}

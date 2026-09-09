@@ -1,0 +1,397 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.Middleware.CallContext
+  commentId: T:Sunstealer.FunctionApp1.Middleware.CallContext
+  id: CallContext
+  parent: Sunstealer.FunctionApp1.Middleware
+  children:
+  - Sunstealer.FunctionApp1.Middleware.CallContext.GetData(System.String)
+  - Sunstealer.FunctionApp1.Middleware.CallContext.SetData(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: CallContext
+  nameWithType: CallContext
+  fullName: Sunstealer.FunctionApp1.Middleware.CallContext
+  type: Class
+  source:
+    id: CallContext
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Middleware\CallContext.cs
+    startLine: 7
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Middleware
+  summary: ''
+  example: []
+  syntax:
+    content: public static class CallContext
+    content.vb: Public Module CallContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Sunstealer.FunctionApp1.Middleware.CallContext.SetData(System.String,System.Object)
+  commentId: M:Sunstealer.FunctionApp1.Middleware.CallContext.SetData(System.String,System.Object)
+  id: SetData(System.String,System.Object)
+  parent: Sunstealer.FunctionApp1.Middleware.CallContext
+  langs:
+  - csharp
+  - vb
+  name: SetData(string, object)
+  nameWithType: CallContext.SetData(string, object)
+  fullName: Sunstealer.FunctionApp1.Middleware.CallContext.SetData(string, object)
+  type: Method
+  source:
+    id: SetData
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Middleware\CallContext.cs
+    startLine: 19
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Middleware
+  summary: ''
+  example: []
+  syntax:
+    content: public static void SetData(string name, object data)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    - id: data
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Sub SetData(name As String, data As Object)
+  overload: Sunstealer.FunctionApp1.Middleware.CallContext.SetData*
+  nameWithType.vb: CallContext.SetData(String, Object)
+  fullName.vb: Sunstealer.FunctionApp1.Middleware.CallContext.SetData(String, Object)
+  name.vb: SetData(String, Object)
+- uid: Sunstealer.FunctionApp1.Middleware.CallContext.GetData(System.String)
+  commentId: M:Sunstealer.FunctionApp1.Middleware.CallContext.GetData(System.String)
+  id: GetData(System.String)
+  parent: Sunstealer.FunctionApp1.Middleware.CallContext
+  langs:
+  - csharp
+  - vb
+  name: GetData(string)
+  nameWithType: CallContext.GetData(string)
+  fullName: Sunstealer.FunctionApp1.Middleware.CallContext.GetData(string)
+  type: Method
+  source:
+    id: GetData
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Middleware\CallContext.cs
+    startLine: 26
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Middleware
+  summary: ''
+  example: []
+  syntax:
+    content: public static object? GetData(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    return:
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Function GetData(name As String) As Object
+  overload: Sunstealer.FunctionApp1.Middleware.CallContext.GetData*
+  nameWithType.vb: CallContext.GetData(String)
+  fullName.vb: Sunstealer.FunctionApp1.Middleware.CallContext.GetData(String)
+  name.vb: GetData(String)
+references:
+- uid: Sunstealer.FunctionApp1.Middleware
+  commentId: N:Sunstealer.FunctionApp1.Middleware
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.Middleware
+  nameWithType: Sunstealer.FunctionApp1.Middleware
+  fullName: Sunstealer.FunctionApp1.Middleware
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Middleware
+    name: Middleware
+    href: Sunstealer.FunctionApp1.Middleware.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Middleware
+    name: Middleware
+    href: Sunstealer.FunctionApp1.Middleware.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sunstealer.FunctionApp1.Middleware.CallContext.SetData*
+  commentId: Overload:Sunstealer.FunctionApp1.Middleware.CallContext.SetData
+  href: Sunstealer.FunctionApp1.Middleware.CallContext.html#Sunstealer_FunctionApp1_Middleware_CallContext_SetData_System_String_System_Object_
+  name: SetData
+  nameWithType: CallContext.SetData
+  fullName: Sunstealer.FunctionApp1.Middleware.CallContext.SetData
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Sunstealer.FunctionApp1.Middleware.CallContext.GetData*
+  commentId: Overload:Sunstealer.FunctionApp1.Middleware.CallContext.GetData
+  href: Sunstealer.FunctionApp1.Middleware.CallContext.html#Sunstealer_FunctionApp1_Middleware_CallContext_GetData_System_String_
+  name: GetData
+  nameWithType: CallContext.GetData
+  fullName: Sunstealer.FunctionApp1.Middleware.CallContext.GetData

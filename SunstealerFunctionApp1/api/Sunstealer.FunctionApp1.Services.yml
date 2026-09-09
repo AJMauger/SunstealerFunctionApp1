@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.Services
+  commentId: N:Sunstealer.FunctionApp1.Services
+  id: Sunstealer.FunctionApp1.Services
+  children:
+  - Sunstealer.FunctionApp1.Services.ApplicationDbContext
+  - Sunstealer.FunctionApp1.Services.ApplicationService
+  - Sunstealer.FunctionApp1.Services.IApplicationService
+  langs:
+  - csharp
+  - vb
+  name: Sunstealer.FunctionApp1.Services
+  nameWithType: Sunstealer.FunctionApp1.Services
+  fullName: Sunstealer.FunctionApp1.Services
+  type: Namespace
+  assemblies:
+  - SunstealerFunctionApp1
+references:
+- uid: Sunstealer.FunctionApp1.Services.ApplicationDbContext
+  commentId: T:Sunstealer.FunctionApp1.Services.ApplicationDbContext
+  href: Sunstealer.FunctionApp1.Services.ApplicationDbContext.html
+  name: ApplicationDbContext
+  nameWithType: ApplicationDbContext
+  fullName: Sunstealer.FunctionApp1.Services.ApplicationDbContext
+- uid: Sunstealer.FunctionApp1.Services.IApplicationService
+  commentId: T:Sunstealer.FunctionApp1.Services.IApplicationService
+  parent: Sunstealer.FunctionApp1.Services
+  href: Sunstealer.FunctionApp1.Services.IApplicationService.html
+  name: IApplicationService
+  nameWithType: IApplicationService
+  fullName: Sunstealer.FunctionApp1.Services.IApplicationService
+- uid: Sunstealer.FunctionApp1.Services.ApplicationService
+  commentId: T:Sunstealer.FunctionApp1.Services.ApplicationService
+  href: Sunstealer.FunctionApp1.Services.ApplicationService.html
+  name: ApplicationService
+  nameWithType: ApplicationService
+  fullName: Sunstealer.FunctionApp1.Services.ApplicationService
+- uid: Sunstealer.FunctionApp1.Services
+  commentId: N:Sunstealer.FunctionApp1.Services
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.Services
+  nameWithType: Sunstealer.FunctionApp1.Services
+  fullName: Sunstealer.FunctionApp1.Services
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Services
+    name: Services
+    href: Sunstealer.FunctionApp1.Services.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Services
+    name: Services
+    href: Sunstealer.FunctionApp1.Services.html

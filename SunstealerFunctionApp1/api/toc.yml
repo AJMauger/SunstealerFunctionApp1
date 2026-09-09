@@ -1,0 +1,96 @@
+### YamlMime:TableOfContent
+items:
+- uid: Sunslealer.FunctionApp1.Tests
+  name: Sunslealer.FunctionApp1.Tests
+  type: Namespace
+  items:
+  - uid: Sunslealer.FunctionApp1.Tests.UnitTest1
+    name: UnitTest1
+    type: Class
+- uid: Sunstealer.FunctionApp1
+  name: Sunstealer.FunctionApp1
+  type: Namespace
+  items:
+  - uid: Sunstealer.FunctionApp1.Program
+    name: Program
+    type: Class
+- uid: Sunstealer.FunctionApp1.Functions
+  name: Sunstealer.FunctionApp1.Functions
+  type: Namespace
+  items:
+  - uid: Sunstealer.FunctionApp1.Functions.Functions
+    name: Functions
+    type: Class
+- uid: Sunstealer.FunctionApp1.Middleware
+  name: Sunstealer.FunctionApp1.Middleware
+  type: Namespace
+  items:
+  - uid: Sunstealer.FunctionApp1.Middleware.CallContext
+    name: CallContext
+    type: Class
+  - uid: Sunstealer.FunctionApp1.Middleware.ContextMiddleware
+    name: ContextMiddleware
+    type: Class
+  - uid: Sunstealer.FunctionApp1.Middleware.Flow
+    name: Flow
+    type: Class
+  - uid: Sunstealer.FunctionApp1.Middleware.HttpUtils
+    name: HttpUtils
+    type: Class
+- uid: Sunstealer.FunctionApp1.Models
+  name: Sunstealer.FunctionApp1.Models
+  type: Namespace
+  items:
+  - uid: Sunstealer.FunctionApp1.Models.ConfigurationModel
+    name: ConfigurationModel
+    type: Class
+  - uid: Sunstealer.FunctionApp1.Models.Table1
+    name: Table1
+    type: Class
+- uid: Sunstealer.FunctionApp1.Monitor
+  name: Sunstealer.FunctionApp1.Monitor
+  type: Namespace
+  items:
+  - uid: Sunstealer.FunctionApp1.Monitor.Logger
+    name: Logger
+    type: Class
+  - uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+    name: LoggerExtensions
+    type: Class
+  - uid: Sunstealer.FunctionApp1.Monitor.StackFrame
+    name: StackFrame
+    type: Class
+- uid: Sunstealer.FunctionApp1.OpenApi
+  name: Sunstealer.FunctionApp1.OpenApi
+  type: Namespace
+  items:
+  - uid: Sunstealer.FunctionApp1.OpenApi.DocumentFilter
+    name: DocumentFilter
+    type: Class
+  - uid: Sunstealer.FunctionApp1.OpenApi.OpenApiConfigurationOptions
+    name: OpenApiConfigurationOptions
+    type: Class
+- uid: Sunstealer.FunctionApp1.Services
+  name: Sunstealer.FunctionApp1.Services
+  type: Namespace
+  items:
+  - uid: Sunstealer.FunctionApp1.Services.ApplicationDbContext
+    name: ApplicationDbContext
+    type: Class
+  - uid: Sunstealer.FunctionApp1.Services.ApplicationService
+    name: ApplicationService
+    type: Class
+  - uid: Sunstealer.FunctionApp1.Services.IApplicationService
+    name: IApplicationService
+    type: Interface
+- uid: SunstealerFunctionApp1
+  name: SunstealerFunctionApp1
+  type: Namespace
+  items:
+  - uid: SunstealerFunctionApp1.FunctionExecutorHostBuilderExtensions
+    name: FunctionExecutorHostBuilderExtensions
+    type: Class
+  - uid: SunstealerFunctionApp1.WorkerHostBuilderFunctionMetadataProviderExtension
+    name: WorkerHostBuilderFunctionMetadataProviderExtension
+    type: Class
+memberLayout: SamePage

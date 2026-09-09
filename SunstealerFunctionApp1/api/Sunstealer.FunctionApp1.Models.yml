@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.Models
+  commentId: N:Sunstealer.FunctionApp1.Models
+  id: Sunstealer.FunctionApp1.Models
+  children:
+  - Sunstealer.FunctionApp1.Models.ConfigurationModel
+  - Sunstealer.FunctionApp1.Models.Table1
+  langs:
+  - csharp
+  - vb
+  name: Sunstealer.FunctionApp1.Models
+  nameWithType: Sunstealer.FunctionApp1.Models
+  fullName: Sunstealer.FunctionApp1.Models
+  type: Namespace
+  assemblies:
+  - SunstealerFunctionApp1
+references:
+- uid: Sunstealer.FunctionApp1.Models.ConfigurationModel
+  commentId: T:Sunstealer.FunctionApp1.Models.ConfigurationModel
+  parent: Sunstealer.FunctionApp1.Models
+  href: Sunstealer.FunctionApp1.Models.ConfigurationModel.html
+  name: ConfigurationModel
+  nameWithType: ConfigurationModel
+  fullName: Sunstealer.FunctionApp1.Models.ConfigurationModel
+- uid: Sunstealer.FunctionApp1.Models.Table1
+  commentId: T:Sunstealer.FunctionApp1.Models.Table1
+  href: Sunstealer.FunctionApp1.Models.Table1.html
+  name: Table1
+  nameWithType: Table1
+  fullName: Sunstealer.FunctionApp1.Models.Table1
+- uid: Sunstealer.FunctionApp1.Models
+  commentId: N:Sunstealer.FunctionApp1.Models
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.Models
+  nameWithType: Sunstealer.FunctionApp1.Models
+  fullName: Sunstealer.FunctionApp1.Models
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Models
+    name: Models
+    href: Sunstealer.FunctionApp1.Models.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Models
+    name: Models
+    href: Sunstealer.FunctionApp1.Models.html

@@ -1,0 +1,1634 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.Functions.Functions
+  commentId: T:Sunstealer.FunctionApp1.Functions.Functions
+  id: Functions
+  parent: Sunstealer.FunctionApp1.Functions
+  children:
+  - Sunstealer.FunctionApp1.Functions.Functions.#ctor(Sunstealer.FunctionApp1.Services.IApplicationService,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.EntityFrameworkCore.IDbContextFactory{Sunstealer.FunctionApp1.Services.ApplicationDbContext},Microsoft.Extensions.Logging.ILogger{Sunstealer.FunctionApp1.Functions.Functions},System.Diagnostics.Metrics.IMeterFactory,OpenTelemetry.Metrics.MeterProvider)
+  - Sunstealer.FunctionApp1.Functions.Functions.AlwaysEncrypted(Microsoft.AspNetCore.Http.HttpRequest)
+  - Sunstealer.FunctionApp1.Functions.Functions.EntityFrameworkLinq(Microsoft.AspNetCore.Http.HttpRequest)
+  - Sunstealer.FunctionApp1.Functions.Functions.FinalizeResponse(Microsoft.AspNetCore.Http.HttpRequest,System.Net.HttpStatusCode,System.Object)
+  - Sunstealer.FunctionApp1.Functions.Functions.FinalizeResult(Microsoft.AspNetCore.Http.HttpRequest,System.Net.HttpStatusCode,System.Object)
+  - Sunstealer.FunctionApp1.Functions.Functions.GetConfiguration(Microsoft.AspNetCore.Http.HttpRequest)
+  - Sunstealer.FunctionApp1.Functions.Functions.Log(Microsoft.AspNetCore.Http.HttpRequest)
+  - Sunstealer.FunctionApp1.Functions.Functions.Test(Microsoft.AspNetCore.Http.HttpRequest)
+  - Sunstealer.FunctionApp1.Functions.Functions.Throw(Microsoft.AspNetCore.Http.HttpRequest)
+  - Sunstealer.FunctionApp1.Functions.Functions.TrackDependency(Microsoft.AspNetCore.Http.HttpRequest)
+  - Sunstealer.FunctionApp1.Functions.Functions.TrackEvent(Microsoft.AspNetCore.Http.HttpRequest)
+  - Sunstealer.FunctionApp1.Functions.Functions.TrackMetric(Microsoft.AspNetCore.Http.HttpRequest)
+  langs:
+  - csharp
+  - vb
+  name: Functions
+  nameWithType: Functions
+  fullName: Sunstealer.FunctionApp1.Functions.Functions
+  type: Class
+  source:
+    id: Functions
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 23
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: class
+  example: []
+  syntax:
+    content: public class Functions
+    content.vb: Public Class Functions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Sunstealer.FunctionApp1.Functions.Functions.#ctor(Sunstealer.FunctionApp1.Services.IApplicationService,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.EntityFrameworkCore.IDbContextFactory{Sunstealer.FunctionApp1.Services.ApplicationDbContext},Microsoft.Extensions.Logging.ILogger{Sunstealer.FunctionApp1.Functions.Functions},System.Diagnostics.Metrics.IMeterFactory,OpenTelemetry.Metrics.MeterProvider)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.#ctor(Sunstealer.FunctionApp1.Services.IApplicationService,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.EntityFrameworkCore.IDbContextFactory{Sunstealer.FunctionApp1.Services.ApplicationDbContext},Microsoft.Extensions.Logging.ILogger{Sunstealer.FunctionApp1.Functions.Functions},System.Diagnostics.Metrics.IMeterFactory,OpenTelemetry.Metrics.MeterProvider)
+  id: '#ctor(Sunstealer.FunctionApp1.Services.IApplicationService,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.EntityFrameworkCore.IDbContextFactory{Sunstealer.FunctionApp1.Services.ApplicationDbContext},Microsoft.Extensions.Logging.ILogger{Sunstealer.FunctionApp1.Functions.Functions},System.Diagnostics.Metrics.IMeterFactory,OpenTelemetry.Metrics.MeterProvider)'
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: Functions(IApplicationService, IConfiguration, IDbContextFactory<ApplicationDbContext>, ILogger<Functions>, IMeterFactory, MeterProvider)
+  nameWithType: Functions.Functions(IApplicationService, IConfiguration, IDbContextFactory<ApplicationDbContext>, ILogger<Functions>, IMeterFactory, MeterProvider)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.Functions(Sunstealer.FunctionApp1.Services.IApplicationService, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.EntityFrameworkCore.IDbContextFactory<Sunstealer.FunctionApp1.Services.ApplicationDbContext>, Microsoft.Extensions.Logging.ILogger<Sunstealer.FunctionApp1.Functions.Functions>, System.Diagnostics.Metrics.IMeterFactory, OpenTelemetry.Metrics.MeterProvider)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 51
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: >-
+    Functions contructor with dependency injection of Services used by the Triggers (API handlers).
+
+    If a Service is null the constructor will throw an exception that will be processed by <xref href="Sunstealer.FunctionApp1.Middleware.ContextMiddleware" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Functions(IApplicationService application, IConfiguration configuration, IDbContextFactory<ApplicationDbContext> dbContextFactory, ILogger<Functions> logger, IMeterFactory meterFactory, MeterProvider meterProvider)
+    parameters:
+    - id: application
+      type: Sunstealer.FunctionApp1.Services.IApplicationService
+      description: Is a Singleton Service (only one, shared instance exists) used to manage global application resources.
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+      description: Is the Microsoft Configuration Service with access to application environment variables, settings, and the ACS configuration.
+    - id: dbContextFactory
+      type: Microsoft.EntityFrameworkCore.IDbContextFactory{Sunstealer.FunctionApp1.Services.ApplicationDbContext}
+      description: Is a Factory Service used to create Database Comntexts (Entity Framework database connections)
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Sunstealer.FunctionApp1.Functions.Functions}
+      description: Is the Microsoft logger service which is extended (overridden) with <xref href="Sunstealer.FunctionApp1.Monitor.LoggerExtensions" data-throw-if-not-resolved="false"></xref>
+    - id: meterFactory
+      type: System.Diagnostics.Metrics.IMeterFactory
+      description: Is a Factory Service used to create Open Telemetry Meters.
+    - id: meterProvider
+      type: OpenTelemetry.Metrics.MeterProvider
+      description: Is a Provider Object used to govern Open Telemetry.
+    content.vb: Public Sub New(application As IApplicationService, configuration As IConfiguration, dbContextFactory As IDbContextFactory(Of ApplicationDbContext), logger As ILogger(Of Functions), meterFactory As IMeterFactory, meterProvider As MeterProvider)
+  overload: Sunstealer.FunctionApp1.Functions.Functions.#ctor*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: Functions.New(IApplicationService, IConfiguration, IDbContextFactory(Of ApplicationDbContext), ILogger(Of Functions), IMeterFactory, MeterProvider)
+  fullName.vb: Sunstealer.FunctionApp1.Functions.Functions.New(Sunstealer.FunctionApp1.Services.IApplicationService, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.EntityFrameworkCore.IDbContextFactory(Of Sunstealer.FunctionApp1.Services.ApplicationDbContext), Microsoft.Extensions.Logging.ILogger(Of Sunstealer.FunctionApp1.Functions.Functions), System.Diagnostics.Metrics.IMeterFactory, OpenTelemetry.Metrics.MeterProvider)
+  name.vb: New(IApplicationService, IConfiguration, IDbContextFactory(Of ApplicationDbContext), ILogger(Of Functions), IMeterFactory, MeterProvider)
+- uid: Sunstealer.FunctionApp1.Functions.Functions.AlwaysEncrypted(Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.AlwaysEncrypted(Microsoft.AspNetCore.Http.HttpRequest)
+  id: AlwaysEncrypted(Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: AlwaysEncrypted(HttpRequest)
+  nameWithType: Functions.AlwaysEncrypted(HttpRequest)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.AlwaysEncrypted(Microsoft.AspNetCore.Http.HttpRequest)
+  type: Method
+  source:
+    id: AlwaysEncrypted
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 81
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Function("AlwaysEncrypted")]
+
+      [OpenApiOperation("AlwaysEncrypted", new string[] { }, Description = "AlwaysEncrypted")]
+
+      [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(string), Description = "Description.Response", Example = typeof(string))]
+
+      public Task<IActionResult> AlwaysEncrypted(HttpRequest req)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <Function("AlwaysEncrypted")>
+
+      <OpenApiOperation("AlwaysEncrypted", New String() { }, Description:="AlwaysEncrypted")>
+
+      <OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", GetType(String), Description:="Description.Response", Example:=GetType(String))>
+
+      Public Function AlwaysEncrypted(req As HttpRequest) As Task(Of IActionResult)
+  overload: Sunstealer.FunctionApp1.Functions.Functions.AlwaysEncrypted*
+  attributes:
+  - type: Microsoft.Azure.Functions.Worker.FunctionAttribute
+    ctor: Microsoft.Azure.Functions.Worker.FunctionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AlwaysEncrypted
+  - type: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiResponseWithBodyAttribute
+    ctor: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiResponseWithBodyAttribute.#ctor(System.Net.HttpStatusCode,System.String,System.Type)
+    arguments:
+    - type: System.Net.HttpStatusCode
+      value: 200
+    - type: System.String
+      value: application/json
+    - type: System.Type
+      value: System.String
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Description.Response
+    - name: Example
+      type: System.Type
+      value: System.String
+- uid: Sunstealer.FunctionApp1.Functions.Functions.EntityFrameworkLinq(Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.EntityFrameworkLinq(Microsoft.AspNetCore.Http.HttpRequest)
+  id: EntityFrameworkLinq(Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: EntityFrameworkLinq(HttpRequest)
+  nameWithType: Functions.EntityFrameworkLinq(HttpRequest)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.EntityFrameworkLinq(Microsoft.AspNetCore.Http.HttpRequest)
+  type: Method
+  source:
+    id: EntityFrameworkLinq
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 119
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Function("EntityFrameworkLinq")]
+
+      [OpenApiOperation("EntityFrameworkLinq", new string[] { }, Description = "EntityFrameworkLinq")]
+
+      [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(string), Description = "Description.Response", Example = typeof(string))]
+
+      public IActionResult EntityFrameworkLinq(HttpRequest req)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: ''
+    content.vb: >-
+      <Function("EntityFrameworkLinq")>
+
+      <OpenApiOperation("EntityFrameworkLinq", New String() { }, Description:="EntityFrameworkLinq")>
+
+      <OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", GetType(String), Description:="Description.Response", Example:=GetType(String))>
+
+      Public Function EntityFrameworkLinq(req As HttpRequest) As IActionResult
+  overload: Sunstealer.FunctionApp1.Functions.Functions.EntityFrameworkLinq*
+  attributes:
+  - type: Microsoft.Azure.Functions.Worker.FunctionAttribute
+    ctor: Microsoft.Azure.Functions.Worker.FunctionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EntityFrameworkLinq
+  - type: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiResponseWithBodyAttribute
+    ctor: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiResponseWithBodyAttribute.#ctor(System.Net.HttpStatusCode,System.String,System.Type)
+    arguments:
+    - type: System.Net.HttpStatusCode
+      value: 200
+    - type: System.String
+      value: application/json
+    - type: System.Type
+      value: System.String
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Description.Response
+    - name: Example
+      type: System.Type
+      value: System.String
+- uid: Sunstealer.FunctionApp1.Functions.Functions.GetConfiguration(Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.GetConfiguration(Microsoft.AspNetCore.Http.HttpRequest)
+  id: GetConfiguration(Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: GetConfiguration(HttpRequest)
+  nameWithType: Functions.GetConfiguration(HttpRequest)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.GetConfiguration(Microsoft.AspNetCore.Http.HttpRequest)
+  type: Method
+  source:
+    id: GetConfiguration
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 155
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Function("GetConfiguration")]
+
+      [OpenApiOperation("GetConfiguration", new string[] { }, Description = "GetConfiguration")]
+
+      [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(string), Description = "Description.Response", Example = typeof(string))]
+
+      public IActionResult GetConfiguration(HttpRequest req)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: ''
+    content.vb: >-
+      <Function("GetConfiguration")>
+
+      <OpenApiOperation("GetConfiguration", New String() { }, Description:="GetConfiguration")>
+
+      <OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", GetType(String), Description:="Description.Response", Example:=GetType(String))>
+
+      Public Function GetConfiguration(req As HttpRequest) As IActionResult
+  overload: Sunstealer.FunctionApp1.Functions.Functions.GetConfiguration*
+  attributes:
+  - type: Microsoft.Azure.Functions.Worker.FunctionAttribute
+    ctor: Microsoft.Azure.Functions.Worker.FunctionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GetConfiguration
+  - type: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiResponseWithBodyAttribute
+    ctor: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiResponseWithBodyAttribute.#ctor(System.Net.HttpStatusCode,System.String,System.Type)
+    arguments:
+    - type: System.Net.HttpStatusCode
+      value: 200
+    - type: System.String
+      value: application/json
+    - type: System.Type
+      value: System.String
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Description.Response
+    - name: Example
+      type: System.Type
+      value: System.String
+- uid: Sunstealer.FunctionApp1.Functions.Functions.Log(Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.Log(Microsoft.AspNetCore.Http.HttpRequest)
+  id: Log(Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: Log(HttpRequest)
+  nameWithType: Functions.Log(HttpRequest)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.Log(Microsoft.AspNetCore.Http.HttpRequest)
+  type: Method
+  source:
+    id: Log
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 206
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Function("Log")]
+
+      [OpenApiOperation("Log", new string[] { }, Description = "Log")]
+
+      [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(string), Description = "Description.Response", Example = typeof(string))]
+
+      public IActionResult Log(HttpRequest req)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: ''
+    content.vb: >-
+      <Function("Log")>
+
+      <OpenApiOperation("Log", New String() { }, Description:="Log")>
+
+      <OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", GetType(String), Description:="Description.Response", Example:=GetType(String))>
+
+      Public Function Log(req As HttpRequest) As IActionResult
+  overload: Sunstealer.FunctionApp1.Functions.Functions.Log*
+  attributes:
+  - type: Microsoft.Azure.Functions.Worker.FunctionAttribute
+    ctor: Microsoft.Azure.Functions.Worker.FunctionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Log
+  - type: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiResponseWithBodyAttribute
+    ctor: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes.OpenApiResponseWithBodyAttribute.#ctor(System.Net.HttpStatusCode,System.String,System.Type)
+    arguments:
+    - type: System.Net.HttpStatusCode
+      value: 200
+    - type: System.String
+      value: application/json
+    - type: System.Type
+      value: System.String
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Description.Response
+    - name: Example
+      type: System.Type
+      value: System.String
+- uid: Sunstealer.FunctionApp1.Functions.Functions.TrackDependency(Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.TrackDependency(Microsoft.AspNetCore.Http.HttpRequest)
+  id: TrackDependency(Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: TrackDependency(HttpRequest)
+  nameWithType: Functions.TrackDependency(HttpRequest)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.TrackDependency(Microsoft.AspNetCore.Http.HttpRequest)
+  type: Method
+  source:
+    id: TrackDependency
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 231
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Function("TrackDependency")]
+
+      [OpenApiOperation("TrackDependency", new string[] { }, Description = "TrackDependency")]
+
+      public Task<IActionResult> TrackDependency(HttpRequest req)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <Function("TrackDependency")>
+
+      <OpenApiOperation("TrackDependency", New String() { }, Description:="TrackDependency")>
+
+      Public Function TrackDependency(req As HttpRequest) As Task(Of IActionResult)
+  overload: Sunstealer.FunctionApp1.Functions.Functions.TrackDependency*
+  attributes:
+  - type: Microsoft.Azure.Functions.Worker.FunctionAttribute
+    ctor: Microsoft.Azure.Functions.Worker.FunctionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TrackDependency
+- uid: Sunstealer.FunctionApp1.Functions.Functions.TrackEvent(Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.TrackEvent(Microsoft.AspNetCore.Http.HttpRequest)
+  id: TrackEvent(Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: TrackEvent(HttpRequest)
+  nameWithType: Functions.TrackEvent(HttpRequest)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.TrackEvent(Microsoft.AspNetCore.Http.HttpRequest)
+  type: Method
+  source:
+    id: TrackEvent
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 272
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Function("TrackEvent")]
+
+      [OpenApiOperation("TrackEvent", new string[] { }, Description = "TrackEvent")]
+
+      public Task<IActionResult> TrackEvent(HttpRequest req)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <Function("TrackEvent")>
+
+      <OpenApiOperation("TrackEvent", New String() { }, Description:="TrackEvent")>
+
+      Public Function TrackEvent(req As HttpRequest) As Task(Of IActionResult)
+  overload: Sunstealer.FunctionApp1.Functions.Functions.TrackEvent*
+  attributes:
+  - type: Microsoft.Azure.Functions.Worker.FunctionAttribute
+    ctor: Microsoft.Azure.Functions.Worker.FunctionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TrackEvent
+- uid: Sunstealer.FunctionApp1.Functions.Functions.TrackMetric(Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.TrackMetric(Microsoft.AspNetCore.Http.HttpRequest)
+  id: TrackMetric(Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: TrackMetric(HttpRequest)
+  nameWithType: Functions.TrackMetric(HttpRequest)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.TrackMetric(Microsoft.AspNetCore.Http.HttpRequest)
+  type: Method
+  source:
+    id: TrackMetric
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 305
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Function("TrackMetric")]
+
+      [OpenApiOperation("TrackMetric", new string[] { }, Description = "TrackMetric")]
+
+      public Task<IActionResult> TrackMetric(HttpRequest req)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <Function("TrackMetric")>
+
+      <OpenApiOperation("TrackMetric", New String() { }, Description:="TrackMetric")>
+
+      Public Function TrackMetric(req As HttpRequest) As Task(Of IActionResult)
+  overload: Sunstealer.FunctionApp1.Functions.Functions.TrackMetric*
+  attributes:
+  - type: Microsoft.Azure.Functions.Worker.FunctionAttribute
+    ctor: Microsoft.Azure.Functions.Worker.FunctionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TrackMetric
+- uid: Sunstealer.FunctionApp1.Functions.Functions.Test(Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.Test(Microsoft.AspNetCore.Http.HttpRequest)
+  id: Test(Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: Test(HttpRequest)
+  nameWithType: Functions.Test(HttpRequest)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.Test(Microsoft.AspNetCore.Http.HttpRequest)
+  type: Method
+  source:
+    id: Test
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 338
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Function("Test")]
+
+      [OpenApiOperation("Test", new string[] { }, Description = "Container1")]
+
+      public Task<IActionResult> Test(HttpRequest req)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <Function("Test")>
+
+      <OpenApiOperation("Test", New String() { }, Description:="Container1")>
+
+      Public Function Test(req As HttpRequest) As Task(Of IActionResult)
+  overload: Sunstealer.FunctionApp1.Functions.Functions.Test*
+  attributes:
+  - type: Microsoft.Azure.Functions.Worker.FunctionAttribute
+    ctor: Microsoft.Azure.Functions.Worker.FunctionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Test
+- uid: Sunstealer.FunctionApp1.Functions.Functions.Throw(Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.Throw(Microsoft.AspNetCore.Http.HttpRequest)
+  id: Throw(Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: Throw(HttpRequest)
+  nameWithType: Functions.Throw(HttpRequest)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.Throw(Microsoft.AspNetCore.Http.HttpRequest)
+  type: Method
+  source:
+    id: Throw
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 367
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Function("Throw")]
+
+      [OpenApiOperation("Throw", new string[] { }, Description = "Throw")]
+
+      public Task<IActionResult> Throw(HttpRequest req)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <Function("Throw")>
+
+      <OpenApiOperation("Throw", New String() { }, Description:="Throw")>
+
+      Public Function [Throw](req As HttpRequest) As Task(Of IActionResult)
+  overload: Sunstealer.FunctionApp1.Functions.Functions.Throw*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  attributes:
+  - type: Microsoft.Azure.Functions.Worker.FunctionAttribute
+    ctor: Microsoft.Azure.Functions.Worker.FunctionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Throw
+- uid: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResponse(Microsoft.AspNetCore.Http.HttpRequest,System.Net.HttpStatusCode,System.Object)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.FinalizeResponse(Microsoft.AspNetCore.Http.HttpRequest,System.Net.HttpStatusCode,System.Object)
+  id: FinalizeResponse(Microsoft.AspNetCore.Http.HttpRequest,System.Net.HttpStatusCode,System.Object)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: FinalizeResponse(HttpRequest, HttpStatusCode, object)
+  nameWithType: Functions.FinalizeResponse(HttpRequest, HttpStatusCode, object)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResponse(Microsoft.AspNetCore.Http.HttpRequest, System.Net.HttpStatusCode, object)
+  type: Method
+  source:
+    id: FinalizeResponse
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 382
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: public static Task FinalizeResponse(HttpRequest req, HttpStatusCode statusCode, object payload)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    - id: statusCode
+      type: System.Net.HttpStatusCode
+      description: ''
+    - id: payload
+      type: System.Object
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Shared Function FinalizeResponse(req As HttpRequest, statusCode As HttpStatusCode, payload As Object) As Task
+  overload: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResponse*
+  nameWithType.vb: Functions.FinalizeResponse(HttpRequest, HttpStatusCode, Object)
+  fullName.vb: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResponse(Microsoft.AspNetCore.Http.HttpRequest, System.Net.HttpStatusCode, Object)
+  name.vb: FinalizeResponse(HttpRequest, HttpStatusCode, Object)
+- uid: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResult(Microsoft.AspNetCore.Http.HttpRequest,System.Net.HttpStatusCode,System.Object)
+  commentId: M:Sunstealer.FunctionApp1.Functions.Functions.FinalizeResult(Microsoft.AspNetCore.Http.HttpRequest,System.Net.HttpStatusCode,System.Object)
+  id: FinalizeResult(Microsoft.AspNetCore.Http.HttpRequest,System.Net.HttpStatusCode,System.Object)
+  parent: Sunstealer.FunctionApp1.Functions.Functions
+  langs:
+  - csharp
+  - vb
+  name: FinalizeResult(HttpRequest, HttpStatusCode, object)
+  nameWithType: Functions.FinalizeResult(HttpRequest, HttpStatusCode, object)
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResult(Microsoft.AspNetCore.Http.HttpRequest, System.Net.HttpStatusCode, object)
+  type: Method
+  source:
+    id: FinalizeResult
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Functions\Function1.cs
+    startLine: 406
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Functions
+  summary: ''
+  example: []
+  syntax:
+    content: public static ActionResult FinalizeResult(HttpRequest req, HttpStatusCode statusCode, object payload)
+    parameters:
+    - id: req
+      type: Microsoft.AspNetCore.Http.HttpRequest
+      description: ''
+    - id: statusCode
+      type: System.Net.HttpStatusCode
+      description: ''
+    - id: payload
+      type: System.Object
+      description: ''
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+      description: ''
+    content.vb: Public Shared Function FinalizeResult(req As HttpRequest, statusCode As HttpStatusCode, payload As Object) As ActionResult
+  overload: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResult*
+  nameWithType.vb: Functions.FinalizeResult(HttpRequest, HttpStatusCode, Object)
+  fullName.vb: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResult(Microsoft.AspNetCore.Http.HttpRequest, System.Net.HttpStatusCode, Object)
+  name.vb: FinalizeResult(HttpRequest, HttpStatusCode, Object)
+references:
+- uid: Sunstealer.FunctionApp1.Functions
+  commentId: N:Sunstealer.FunctionApp1.Functions
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.Functions
+  nameWithType: Sunstealer.FunctionApp1.Functions
+  fullName: Sunstealer.FunctionApp1.Functions
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Functions
+    name: Functions
+    href: Sunstealer.FunctionApp1.Functions.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Functions
+    name: Functions
+    href: Sunstealer.FunctionApp1.Functions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sunstealer.FunctionApp1.Middleware.ContextMiddleware
+  commentId: T:Sunstealer.FunctionApp1.Middleware.ContextMiddleware
+  href: Sunstealer.FunctionApp1.Middleware.ContextMiddleware.html
+  name: ContextMiddleware
+  nameWithType: ContextMiddleware
+  fullName: Sunstealer.FunctionApp1.Middleware.ContextMiddleware
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  commentId: T:Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  href: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.html
+  name: LoggerExtensions
+  nameWithType: LoggerExtensions
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Sunstealer.FunctionApp1.Functions.Functions.#ctor*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.#ctor
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions__ctor_Sunstealer_FunctionApp1_Services_IApplicationService_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_EntityFrameworkCore_IDbContextFactory_Sunstealer_FunctionApp1_Services_ApplicationDbContext__Microsoft_Extensions_Logging_ILogger_Sunstealer_FunctionApp1_Functions_Functions__System_Diagnostics_Metrics_IMeterFactory_OpenTelemetry_Metrics_MeterProvider_
+  name: Functions
+  nameWithType: Functions.Functions
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.Functions
+  nameWithType.vb: Functions.New
+  fullName.vb: Sunstealer.FunctionApp1.Functions.Functions.New
+  name.vb: New
+- uid: Sunstealer.FunctionApp1.Services.IApplicationService
+  commentId: T:Sunstealer.FunctionApp1.Services.IApplicationService
+  parent: Sunstealer.FunctionApp1.Services
+  href: Sunstealer.FunctionApp1.Services.IApplicationService.html
+  name: IApplicationService
+  nameWithType: IApplicationService
+  fullName: Sunstealer.FunctionApp1.Services.IApplicationService
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.EntityFrameworkCore.IDbContextFactory{Sunstealer.FunctionApp1.Services.ApplicationDbContext}
+  commentId: T:Microsoft.EntityFrameworkCore.IDbContextFactory{Sunstealer.FunctionApp1.Services.ApplicationDbContext}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.IDbContextFactory`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.idbcontextfactory-1
+  name: IDbContextFactory<ApplicationDbContext>
+  nameWithType: IDbContextFactory<ApplicationDbContext>
+  fullName: Microsoft.EntityFrameworkCore.IDbContextFactory<Sunstealer.FunctionApp1.Services.ApplicationDbContext>
+  nameWithType.vb: IDbContextFactory(Of ApplicationDbContext)
+  fullName.vb: Microsoft.EntityFrameworkCore.IDbContextFactory(Of Sunstealer.FunctionApp1.Services.ApplicationDbContext)
+  name.vb: IDbContextFactory(Of ApplicationDbContext)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.IDbContextFactory`1
+    name: IDbContextFactory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.idbcontextfactory-1
+  - name: <
+  - uid: Sunstealer.FunctionApp1.Services.ApplicationDbContext
+    name: ApplicationDbContext
+    href: Sunstealer.FunctionApp1.Services.ApplicationDbContext.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.IDbContextFactory`1
+    name: IDbContextFactory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.idbcontextfactory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Sunstealer.FunctionApp1.Services.ApplicationDbContext
+    name: ApplicationDbContext
+    href: Sunstealer.FunctionApp1.Services.ApplicationDbContext.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger{Sunstealer.FunctionApp1.Functions.Functions}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Sunstealer.FunctionApp1.Functions.Functions}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<Functions>
+  nameWithType: ILogger<Functions>
+  fullName: Microsoft.Extensions.Logging.ILogger<Sunstealer.FunctionApp1.Functions.Functions>
+  nameWithType.vb: ILogger(Of Functions)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Sunstealer.FunctionApp1.Functions.Functions)
+  name.vb: ILogger(Of Functions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Sunstealer.FunctionApp1.Functions.Functions
+    name: Functions
+    href: Sunstealer.FunctionApp1.Functions.Functions.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Sunstealer.FunctionApp1.Functions.Functions
+    name: Functions
+    href: Sunstealer.FunctionApp1.Functions.Functions.html
+  - name: )
+- uid: System.Diagnostics.Metrics.IMeterFactory
+  commentId: T:System.Diagnostics.Metrics.IMeterFactory
+  parent: System.Diagnostics.Metrics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.imeterfactory
+  name: IMeterFactory
+  nameWithType: IMeterFactory
+  fullName: System.Diagnostics.Metrics.IMeterFactory
+- uid: OpenTelemetry.Metrics.MeterProvider
+  commentId: T:OpenTelemetry.Metrics.MeterProvider
+  parent: OpenTelemetry.Metrics
+  isExternal: true
+  name: MeterProvider
+  nameWithType: MeterProvider
+  fullName: OpenTelemetry.Metrics.MeterProvider
+- uid: Sunstealer.FunctionApp1.Services
+  commentId: N:Sunstealer.FunctionApp1.Services
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.Services
+  nameWithType: Sunstealer.FunctionApp1.Services
+  fullName: Sunstealer.FunctionApp1.Services
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Services
+    name: Services
+    href: Sunstealer.FunctionApp1.Services.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Services
+    name: Services
+    href: Sunstealer.FunctionApp1.Services.html
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: Microsoft.EntityFrameworkCore.IDbContextFactory`1
+  commentId: T:Microsoft.EntityFrameworkCore.IDbContextFactory`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.idbcontextfactory-1
+  name: IDbContextFactory<TContext>
+  nameWithType: IDbContextFactory<TContext>
+  fullName: Microsoft.EntityFrameworkCore.IDbContextFactory<TContext>
+  nameWithType.vb: IDbContextFactory(Of TContext)
+  fullName.vb: Microsoft.EntityFrameworkCore.IDbContextFactory(Of TContext)
+  name.vb: IDbContextFactory(Of TContext)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.IDbContextFactory`1
+    name: IDbContextFactory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.idbcontextfactory-1
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.IDbContextFactory`1
+    name: IDbContextFactory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.idbcontextfactory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: System.Diagnostics.Metrics
+  commentId: N:System.Diagnostics.Metrics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Diagnostics.Metrics
+  nameWithType: System.Diagnostics.Metrics
+  fullName: System.Diagnostics.Metrics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  - name: .
+  - uid: System.Diagnostics.Metrics
+    name: Metrics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  - name: .
+  - uid: System.Diagnostics.Metrics
+    name: Metrics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics
+- uid: OpenTelemetry.Metrics
+  commentId: N:OpenTelemetry.Metrics
+  isExternal: true
+  name: OpenTelemetry.Metrics
+  nameWithType: OpenTelemetry.Metrics
+  fullName: OpenTelemetry.Metrics
+  spec.csharp:
+  - uid: OpenTelemetry
+    name: OpenTelemetry
+    isExternal: true
+  - name: .
+  - uid: OpenTelemetry.Metrics
+    name: Metrics
+    isExternal: true
+  spec.vb:
+  - uid: OpenTelemetry
+    name: OpenTelemetry
+    isExternal: true
+  - name: .
+  - uid: OpenTelemetry.Metrics
+    name: Metrics
+    isExternal: true
+- uid: Sunstealer.FunctionApp1.Functions.Functions.AlwaysEncrypted*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.AlwaysEncrypted
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_AlwaysEncrypted_Microsoft_AspNetCore_Http_HttpRequest_
+  name: AlwaysEncrypted
+  nameWithType: Functions.AlwaysEncrypted
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.AlwaysEncrypted
+- uid: Microsoft.AspNetCore.Http.HttpRequest
+  commentId: T:Microsoft.AspNetCore.Http.HttpRequest
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httprequest
+  name: HttpRequest
+  nameWithType: HttpRequest
+  fullName: Microsoft.AspNetCore.Http.HttpRequest
+- uid: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IActionResult>
+  nameWithType: Task<IActionResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.IActionResult>
+  nameWithType.vb: Task(Of IActionResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.AspNetCore.Mvc.IActionResult)
+  name.vb: Task(Of IActionResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  - name: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Sunstealer.FunctionApp1.Functions.Functions.EntityFrameworkLinq*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.EntityFrameworkLinq
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_EntityFrameworkLinq_Microsoft_AspNetCore_Http_HttpRequest_
+  name: EntityFrameworkLinq
+  nameWithType: Functions.EntityFrameworkLinq
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.EntityFrameworkLinq
+- uid: Microsoft.AspNetCore.Mvc.IActionResult
+  commentId: T:Microsoft.AspNetCore.Mvc.IActionResult
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  name: IActionResult
+  nameWithType: IActionResult
+  fullName: Microsoft.AspNetCore.Mvc.IActionResult
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+- uid: Sunstealer.FunctionApp1.Functions.Functions.GetConfiguration*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.GetConfiguration
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_GetConfiguration_Microsoft_AspNetCore_Http_HttpRequest_
+  name: GetConfiguration
+  nameWithType: Functions.GetConfiguration
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.GetConfiguration
+- uid: Sunstealer.FunctionApp1.Functions.Functions.Log*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.Log
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_Log_Microsoft_AspNetCore_Http_HttpRequest_
+  name: Log
+  nameWithType: Functions.Log
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.Log
+- uid: Sunstealer.FunctionApp1.Functions.Functions.TrackDependency*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.TrackDependency
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_TrackDependency_Microsoft_AspNetCore_Http_HttpRequest_
+  name: TrackDependency
+  nameWithType: Functions.TrackDependency
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.TrackDependency
+- uid: Sunstealer.FunctionApp1.Functions.Functions.TrackEvent*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.TrackEvent
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_TrackEvent_Microsoft_AspNetCore_Http_HttpRequest_
+  name: TrackEvent
+  nameWithType: Functions.TrackEvent
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.TrackEvent
+- uid: Sunstealer.FunctionApp1.Functions.Functions.TrackMetric*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.TrackMetric
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_TrackMetric_Microsoft_AspNetCore_Http_HttpRequest_
+  name: TrackMetric
+  nameWithType: Functions.TrackMetric
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.TrackMetric
+- uid: Sunstealer.FunctionApp1.Functions.Functions.Test*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.Test
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_Test_Microsoft_AspNetCore_Http_HttpRequest_
+  name: Test
+  nameWithType: Functions.Test
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.Test
+- uid: Sunstealer.FunctionApp1.Functions.Functions.Throw*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.Throw
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_Throw_Microsoft_AspNetCore_Http_HttpRequest_
+  name: Throw
+  nameWithType: Functions.Throw
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.Throw
+- uid: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResponse*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.FinalizeResponse
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_FinalizeResponse_Microsoft_AspNetCore_Http_HttpRequest_System_Net_HttpStatusCode_System_Object_
+  name: FinalizeResponse
+  nameWithType: Functions.FinalizeResponse
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResponse
+- uid: System.Net.HttpStatusCode
+  commentId: T:System.Net.HttpStatusCode
+  parent: System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode
+  name: HttpStatusCode
+  nameWithType: HttpStatusCode
+  fullName: System.Net.HttpStatusCode
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+- uid: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResult*
+  commentId: Overload:Sunstealer.FunctionApp1.Functions.Functions.FinalizeResult
+  href: Sunstealer.FunctionApp1.Functions.Functions.html#Sunstealer_FunctionApp1_Functions_Functions_FinalizeResult_Microsoft_AspNetCore_Http_HttpRequest_System_Net_HttpStatusCode_System_Object_
+  name: FinalizeResult
+  nameWithType: Functions.FinalizeResult
+  fullName: Sunstealer.FunctionApp1.Functions.Functions.FinalizeResult
+- uid: Microsoft.AspNetCore.Mvc.ActionResult
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.actionresult
+  name: ActionResult
+  nameWithType: ActionResult
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult

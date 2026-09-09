@@ -1,0 +1,498 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.OpenApi.DocumentFilter
+  commentId: T:Sunstealer.FunctionApp1.OpenApi.DocumentFilter
+  id: DocumentFilter
+  parent: Sunstealer.FunctionApp1.OpenApi
+  children:
+  - Sunstealer.FunctionApp1.OpenApi.DocumentFilter.Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject,Microsoft.OpenApi.Models.OpenApiDocument)
+  langs:
+  - csharp
+  - vb
+  name: DocumentFilter
+  nameWithType: DocumentFilter
+  fullName: Sunstealer.FunctionApp1.OpenApi.DocumentFilter
+  type: Class
+  source:
+    id: DocumentFilter
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\OpenApi\OpenApiCustomUIOptions.cs
+    startLine: 11
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.OpenApi
+  summary: ''
+  example: []
+  syntax:
+    content: 'public class DocumentFilter : IDocumentFilter'
+    content.vb: Public Class DocumentFilter Implements IDocumentFilter
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Sunstealer.FunctionApp1.OpenApi.DocumentFilter.Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject,Microsoft.OpenApi.Models.OpenApiDocument)
+  commentId: M:Sunstealer.FunctionApp1.OpenApi.DocumentFilter.Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject,Microsoft.OpenApi.Models.OpenApiDocument)
+  id: Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject,Microsoft.OpenApi.Models.OpenApiDocument)
+  parent: Sunstealer.FunctionApp1.OpenApi.DocumentFilter
+  langs:
+  - csharp
+  - vb
+  name: Apply(IHttpRequestDataObject, OpenApiDocument)
+  nameWithType: DocumentFilter.Apply(IHttpRequestDataObject, OpenApiDocument)
+  fullName: Sunstealer.FunctionApp1.OpenApi.DocumentFilter.Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject, Microsoft.OpenApi.Models.OpenApiDocument)
+  type: Method
+  source:
+    id: Apply
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\OpenApi\OpenApiCustomUIOptions.cs
+    startLine: 19
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.OpenApi
+  summary: ''
+  example: []
+  syntax:
+    content: public void Apply(IHttpRequestDataObject req, OpenApiDocument document)
+    parameters:
+    - id: req
+      type: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject
+      description: ''
+    - id: document
+      type: Microsoft.OpenApi.Models.OpenApiDocument
+      description: ''
+    content.vb: Public Sub Apply(req As IHttpRequestDataObject, document As OpenApiDocument)
+  overload: Sunstealer.FunctionApp1.OpenApi.DocumentFilter.Apply*
+  implements:
+  - Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter.Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject,Microsoft.OpenApi.Models.OpenApiDocument)
+references:
+- uid: Sunstealer.FunctionApp1.OpenApi
+  commentId: N:Sunstealer.FunctionApp1.OpenApi
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.OpenApi
+  nameWithType: Sunstealer.FunctionApp1.OpenApi
+  fullName: Sunstealer.FunctionApp1.OpenApi
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.OpenApi
+    name: OpenApi
+    href: Sunstealer.FunctionApp1.OpenApi.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.OpenApi
+    name: OpenApi
+    href: Sunstealer.FunctionApp1.OpenApi.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter
+  commentId: T:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  isExternal: true
+  name: IDocumentFilter
+  nameWithType: IDocumentFilter
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  commentId: N:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  isExternal: true
+  name: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  nameWithType: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure
+    name: Azure
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs
+    name: WebJobs
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core
+    name: Core
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+    name: Abstractions
+    isExternal: true
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure
+    name: Azure
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs
+    name: WebJobs
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core
+    name: Core
+    isExternal: true
+  - name: .
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+    name: Abstractions
+    isExternal: true
+- uid: Sunstealer.FunctionApp1.OpenApi.DocumentFilter.Apply*
+  commentId: Overload:Sunstealer.FunctionApp1.OpenApi.DocumentFilter.Apply
+  href: Sunstealer.FunctionApp1.OpenApi.DocumentFilter.html#Sunstealer_FunctionApp1_OpenApi_DocumentFilter_Apply_Microsoft_Azure_WebJobs_Extensions_OpenApi_Core_Abstractions_IHttpRequestDataObject_Microsoft_OpenApi_Models_OpenApiDocument_
+  name: Apply
+  nameWithType: DocumentFilter.Apply
+  fullName: Sunstealer.FunctionApp1.OpenApi.DocumentFilter.Apply
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter.Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject,Microsoft.OpenApi.Models.OpenApiDocument)
+  commentId: M:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter.Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject,Microsoft.OpenApi.Models.OpenApiDocument)
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter
+  isExternal: true
+  href: https://github.com/microsoft/OpenAPI.NET/blob/553061a69b2d8b8b1653f172707409a16f2a9579/src/Microsoft.OpenApi/Models/OpenApiDocument.cs
+  name: Apply(IHttpRequestDataObject, OpenApiDocument)
+  nameWithType: IDocumentFilter.Apply(IHttpRequestDataObject, OpenApiDocument)
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter.Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject, Microsoft.OpenApi.Models.OpenApiDocument)
+  spec.csharp:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter.Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject,Microsoft.OpenApi.Models.OpenApiDocument)
+    name: Apply
+    isExternal: true
+  - name: (
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject
+    name: IHttpRequestDataObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.OpenApi.Models.OpenApiDocument
+    name: OpenApiDocument
+    isExternal: true
+    href: https://github.com/microsoft/OpenAPI.NET/blob/553061a69b2d8b8b1653f172707409a16f2a9579/src/Microsoft.OpenApi/Models/OpenApiDocument.cs
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IDocumentFilter.Apply(Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject,Microsoft.OpenApi.Models.OpenApiDocument)
+    name: Apply
+    isExternal: true
+  - name: (
+  - uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject
+    name: IHttpRequestDataObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.OpenApi.Models.OpenApiDocument
+    name: OpenApiDocument
+    isExternal: true
+    href: https://github.com/microsoft/OpenAPI.NET/blob/553061a69b2d8b8b1653f172707409a16f2a9579/src/Microsoft.OpenApi/Models/OpenApiDocument.cs
+  - name: )
+- uid: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject
+  commentId: T:Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject
+  parent: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions
+  isExternal: true
+  name: IHttpRequestDataObject
+  nameWithType: IHttpRequestDataObject
+  fullName: Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions.IHttpRequestDataObject
+- uid: Microsoft.OpenApi.Models.OpenApiDocument
+  commentId: T:Microsoft.OpenApi.Models.OpenApiDocument
+  parent: Microsoft.OpenApi.Models
+  isExternal: true
+  href: https://github.com/microsoft/OpenAPI.NET/blob/553061a69b2d8b8b1653f172707409a16f2a9579/src/Microsoft.OpenApi/Models/OpenApiDocument.cs
+  name: OpenApiDocument
+  nameWithType: OpenApiDocument
+  fullName: Microsoft.OpenApi.Models.OpenApiDocument
+- uid: Microsoft.OpenApi.Models
+  commentId: N:Microsoft.OpenApi.Models
+  isExternal: true
+  name: Microsoft.OpenApi.Models
+  nameWithType: Microsoft.OpenApi.Models
+  fullName: Microsoft.OpenApi.Models
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.OpenApi.Models
+    name: Models
+    isExternal: true
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+  - name: .
+  - uid: Microsoft.OpenApi
+    name: OpenApi
+    isExternal: true
+  - name: .
+  - uid: Microsoft.OpenApi.Models
+    name: Models
+    isExternal: true

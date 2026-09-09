@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.Monitor
+  commentId: N:Sunstealer.FunctionApp1.Monitor
+  id: Sunstealer.FunctionApp1.Monitor
+  children:
+  - Sunstealer.FunctionApp1.Monitor.Logger
+  - Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  - Sunstealer.FunctionApp1.Monitor.StackFrame
+  langs:
+  - csharp
+  - vb
+  name: Sunstealer.FunctionApp1.Monitor
+  nameWithType: Sunstealer.FunctionApp1.Monitor
+  fullName: Sunstealer.FunctionApp1.Monitor
+  type: Namespace
+  assemblies:
+  - SunstealerFunctionApp1
+references:
+- uid: Sunstealer.FunctionApp1.Monitor.Logger
+  commentId: T:Sunstealer.FunctionApp1.Monitor.Logger
+  parent: Sunstealer.FunctionApp1.Monitor
+  href: Sunstealer.FunctionApp1.Monitor.Logger.html
+  name: Logger
+  nameWithType: Logger
+  fullName: Sunstealer.FunctionApp1.Monitor.Logger
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  commentId: T:Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  href: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.html
+  name: LoggerExtensions
+  nameWithType: LoggerExtensions
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+- uid: Sunstealer.FunctionApp1.Monitor.StackFrame
+  commentId: T:Sunstealer.FunctionApp1.Monitor.StackFrame
+  href: Sunstealer.FunctionApp1.Monitor.StackFrame.html
+  name: StackFrame
+  nameWithType: StackFrame
+  fullName: Sunstealer.FunctionApp1.Monitor.StackFrame
+- uid: Sunstealer.FunctionApp1.Monitor
+  commentId: N:Sunstealer.FunctionApp1.Monitor
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.Monitor
+  nameWithType: Sunstealer.FunctionApp1.Monitor
+  fullName: Sunstealer.FunctionApp1.Monitor
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Monitor
+    name: Monitor
+    href: Sunstealer.FunctionApp1.Monitor.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Monitor
+    name: Monitor
+    href: Sunstealer.FunctionApp1.Monitor.html

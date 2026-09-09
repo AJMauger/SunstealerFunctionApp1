@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: SunstealerFunctionApp1
+  commentId: N:SunstealerFunctionApp1
+  id: SunstealerFunctionApp1
+  children:
+  - SunstealerFunctionApp1.FunctionExecutorHostBuilderExtensions
+  - SunstealerFunctionApp1.WorkerHostBuilderFunctionMetadataProviderExtension
+  langs:
+  - csharp
+  - vb
+  name: SunstealerFunctionApp1
+  nameWithType: SunstealerFunctionApp1
+  fullName: SunstealerFunctionApp1
+  type: Namespace
+  assemblies:
+  - SunstealerFunctionApp1
+references:
+- uid: SunstealerFunctionApp1.WorkerHostBuilderFunctionMetadataProviderExtension
+  commentId: T:SunstealerFunctionApp1.WorkerHostBuilderFunctionMetadataProviderExtension
+  href: SunstealerFunctionApp1.WorkerHostBuilderFunctionMetadataProviderExtension.html
+  name: WorkerHostBuilderFunctionMetadataProviderExtension
+  nameWithType: WorkerHostBuilderFunctionMetadataProviderExtension
+  fullName: SunstealerFunctionApp1.WorkerHostBuilderFunctionMetadataProviderExtension
+- uid: SunstealerFunctionApp1.FunctionExecutorHostBuilderExtensions
+  commentId: T:SunstealerFunctionApp1.FunctionExecutorHostBuilderExtensions
+  href: SunstealerFunctionApp1.FunctionExecutorHostBuilderExtensions.html
+  name: FunctionExecutorHostBuilderExtensions
+  nameWithType: FunctionExecutorHostBuilderExtensions
+  fullName: SunstealerFunctionApp1.FunctionExecutorHostBuilderExtensions

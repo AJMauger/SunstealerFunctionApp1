@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.Services.IApplicationService
+  commentId: T:Sunstealer.FunctionApp1.Services.IApplicationService
+  id: IApplicationService
+  parent: Sunstealer.FunctionApp1.Services
+  children:
+  - Sunstealer.FunctionApp1.Services.IApplicationService.Configuration
+  langs:
+  - csharp
+  - vb
+  name: IApplicationService
+  nameWithType: IApplicationService
+  fullName: Sunstealer.FunctionApp1.Services.IApplicationService
+  type: Interface
+  source:
+    id: IApplicationService
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Services\ApplicationService.cs
+    startLine: 13
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Services
+  summary: ''
+  example: []
+  syntax:
+    content: public interface IApplicationService
+    content.vb: Public Interface IApplicationService
+  derivedClasses:
+  - Sunstealer.FunctionApp1.Services.ApplicationService
+- uid: Sunstealer.FunctionApp1.Services.IApplicationService.Configuration
+  commentId: P:Sunstealer.FunctionApp1.Services.IApplicationService.Configuration
+  id: Configuration
+  parent: Sunstealer.FunctionApp1.Services.IApplicationService
+  langs:
+  - csharp
+  - vb
+  name: Configuration
+  nameWithType: IApplicationService.Configuration
+  fullName: Sunstealer.FunctionApp1.Services.IApplicationService.Configuration
+  type: Property
+  source:
+    id: Configuration
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Services\ApplicationService.cs
+    startLine: 18
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Services
+  summary: ''
+  example: []
+  syntax:
+    content: ConfigurationModel Configuration { get; }
+    parameters: []
+    return:
+      type: Sunstealer.FunctionApp1.Models.ConfigurationModel
+    content.vb: ReadOnly Property Configuration As ConfigurationModel
+  overload: Sunstealer.FunctionApp1.Services.IApplicationService.Configuration*
+references:
+- uid: Sunstealer.FunctionApp1.Services
+  commentId: N:Sunstealer.FunctionApp1.Services
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.Services
+  nameWithType: Sunstealer.FunctionApp1.Services
+  fullName: Sunstealer.FunctionApp1.Services
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Services
+    name: Services
+    href: Sunstealer.FunctionApp1.Services.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Services
+    name: Services
+    href: Sunstealer.FunctionApp1.Services.html
+- uid: Sunstealer.FunctionApp1.Services.IApplicationService.Configuration*
+  commentId: Overload:Sunstealer.FunctionApp1.Services.IApplicationService.Configuration
+  href: Sunstealer.FunctionApp1.Services.IApplicationService.html#Sunstealer_FunctionApp1_Services_IApplicationService_Configuration
+  name: Configuration
+  nameWithType: IApplicationService.Configuration
+  fullName: Sunstealer.FunctionApp1.Services.IApplicationService.Configuration
+- uid: Sunstealer.FunctionApp1.Models.ConfigurationModel
+  commentId: T:Sunstealer.FunctionApp1.Models.ConfigurationModel
+  parent: Sunstealer.FunctionApp1.Models
+  href: Sunstealer.FunctionApp1.Models.ConfigurationModel.html
+  name: ConfigurationModel
+  nameWithType: ConfigurationModel
+  fullName: Sunstealer.FunctionApp1.Models.ConfigurationModel
+- uid: Sunstealer.FunctionApp1.Models
+  commentId: N:Sunstealer.FunctionApp1.Models
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.Models
+  nameWithType: Sunstealer.FunctionApp1.Models
+  fullName: Sunstealer.FunctionApp1.Models
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Models
+    name: Models
+    href: Sunstealer.FunctionApp1.Models.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Models
+    name: Models
+    href: Sunstealer.FunctionApp1.Models.html

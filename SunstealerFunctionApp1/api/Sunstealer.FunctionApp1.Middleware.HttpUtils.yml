@@ -1,0 +1,878 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils
+  commentId: T:Sunstealer.FunctionApp1.Middleware.HttpUtils
+  id: HttpUtils
+  parent: Sunstealer.FunctionApp1.Middleware
+  children:
+  - Sunstealer.FunctionApp1.Middleware.HttpUtils.Delete(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sunstealer.FunctionApp1.Middleware.HttpUtils.ExecuteAsync``1(System.String,System.String,System.Net.Http.HttpMethod,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  - Sunstealer.FunctionApp1.Middleware.HttpUtils.Get``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sunstealer.FunctionApp1.Middleware.HttpUtils.Post``2(System.String,``0,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sunstealer.FunctionApp1.Middleware.HttpUtils.Put``2(System.String,``0,System.Collections.Generic.Dictionary{System.String,System.String})
+  langs:
+  - csharp
+  - vb
+  name: HttpUtils
+  nameWithType: HttpUtils
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils
+  type: Class
+  source:
+    id: HttpUtils
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Middleware\HttpUtils.cs
+    startLine: 9
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Middleware
+  summary: ''
+  example: []
+  syntax:
+    content: public static class HttpUtils
+    content.vb: Public Module HttpUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils.Delete(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sunstealer.FunctionApp1.Middleware.HttpUtils.Delete(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Delete(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sunstealer.FunctionApp1.Middleware.HttpUtils
+  langs:
+  - csharp
+  - vb
+  name: Delete(string, Dictionary<string, string>?)
+  nameWithType: HttpUtils.Delete(string, Dictionary<string, string>?)
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils.Delete(string, System.Collections.Generic.Dictionary<string, string>?)
+  type: Method
+  source:
+    id: Delete
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Middleware\HttpUtils.cs
+    startLine: 17
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Middleware
+  summary: ''
+  example: []
+  syntax:
+    content: public static Task<JObject> Delete(string url, Dictionary<string, string>? headers = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: ''
+    - id: headers
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Newtonsoft.Json.Linq.JObject}
+      description: ''
+    content.vb: Public Shared Function Delete(url As String, headers As Dictionary(Of String, String) = Nothing) As Task(Of JObject)
+  overload: Sunstealer.FunctionApp1.Middleware.HttpUtils.Delete*
+  nameWithType.vb: HttpUtils.Delete(String, Dictionary(Of String, String))
+  fullName.vb: Sunstealer.FunctionApp1.Middleware.HttpUtils.Delete(String, System.Collections.Generic.Dictionary(Of String, String))
+  name.vb: Delete(String, Dictionary(Of String, String))
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils.Get``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sunstealer.FunctionApp1.Middleware.HttpUtils.Get``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Get``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sunstealer.FunctionApp1.Middleware.HttpUtils
+  langs:
+  - csharp
+  - vb
+  name: Get<TOut>(string, Dictionary<string, string>?)
+  nameWithType: HttpUtils.Get<TOut>(string, Dictionary<string, string>?)
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils.Get<TOut>(string, System.Collections.Generic.Dictionary<string, string>?)
+  type: Method
+  source:
+    id: Get
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Middleware\HttpUtils.cs
+    startLine: 26
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Middleware
+  summary: ''
+  example: []
+  syntax:
+    content: public static Task<TOut> Get<TOut>(string url, Dictionary<string, string>? headers = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: ''
+    - id: headers
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: ''
+    typeParameters:
+    - id: TOut
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{{TOut}}
+      description: ''
+    content.vb: Public Shared Function [Get](Of TOut)(url As String, headers As Dictionary(Of String, String) = Nothing) As Task(Of TOut)
+  overload: Sunstealer.FunctionApp1.Middleware.HttpUtils.Get*
+  nameWithType.vb: HttpUtils.Get(Of TOut)(String, Dictionary(Of String, String))
+  fullName.vb: Sunstealer.FunctionApp1.Middleware.HttpUtils.Get(Of TOut)(String, System.Collections.Generic.Dictionary(Of String, String))
+  name.vb: Get(Of TOut)(String, Dictionary(Of String, String))
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils.Post``2(System.String,``0,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sunstealer.FunctionApp1.Middleware.HttpUtils.Post``2(System.String,``0,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Post``2(System.String,``0,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sunstealer.FunctionApp1.Middleware.HttpUtils
+  langs:
+  - csharp
+  - vb
+  name: Post<TIn, TOut>(string, TIn, Dictionary<string, string>?)
+  nameWithType: HttpUtils.Post<TIn, TOut>(string, TIn, Dictionary<string, string>?)
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils.Post<TIn, TOut>(string, TIn, System.Collections.Generic.Dictionary<string, string>?)
+  type: Method
+  source:
+    id: Post
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Middleware\HttpUtils.cs
+    startLine: 37
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Middleware
+  summary: ''
+  example: []
+  syntax:
+    content: public static Task<TOut> Post<TIn, TOut>(string url, TIn obj, Dictionary<string, string>? headers = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: ''
+    - id: obj
+      type: '{TIn}'
+      description: ''
+    - id: headers
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: ''
+    typeParameters:
+    - id: TIn
+      description: ''
+    - id: TOut
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{{TOut}}
+      description: ''
+    content.vb: Public Shared Function Post(Of TIn, TOut)(url As String, obj As TIn, headers As Dictionary(Of String, String) = Nothing) As Task(Of TOut)
+  overload: Sunstealer.FunctionApp1.Middleware.HttpUtils.Post*
+  nameWithType.vb: HttpUtils.Post(Of TIn, TOut)(String, TIn, Dictionary(Of String, String))
+  fullName.vb: Sunstealer.FunctionApp1.Middleware.HttpUtils.Post(Of TIn, TOut)(String, TIn, System.Collections.Generic.Dictionary(Of String, String))
+  name.vb: Post(Of TIn, TOut)(String, TIn, Dictionary(Of String, String))
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils.Put``2(System.String,``0,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sunstealer.FunctionApp1.Middleware.HttpUtils.Put``2(System.String,``0,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Put``2(System.String,``0,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sunstealer.FunctionApp1.Middleware.HttpUtils
+  langs:
+  - csharp
+  - vb
+  name: Put<TIn, TOut>(string, TIn, Dictionary<string, string>?)
+  nameWithType: HttpUtils.Put<TIn, TOut>(string, TIn, Dictionary<string, string>?)
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils.Put<TIn, TOut>(string, TIn, System.Collections.Generic.Dictionary<string, string>?)
+  type: Method
+  source:
+    id: Put
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Middleware\HttpUtils.cs
+    startLine: 48
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Middleware
+  summary: ''
+  example: []
+  syntax:
+    content: public static Task<TOut> Put<TIn, TOut>(string url, TIn obj, Dictionary<string, string>? headers = null)
+    parameters:
+    - id: url
+      type: System.String
+      description: ''
+    - id: obj
+      type: '{TIn}'
+      description: ''
+    - id: headers
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: ''
+    typeParameters:
+    - id: TIn
+      description: ''
+    - id: TOut
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{{TOut}}
+      description: ''
+    content.vb: Public Shared Function Put(Of TIn, TOut)(url As String, obj As TIn, headers As Dictionary(Of String, String) = Nothing) As Task(Of TOut)
+  overload: Sunstealer.FunctionApp1.Middleware.HttpUtils.Put*
+  nameWithType.vb: HttpUtils.Put(Of TIn, TOut)(String, TIn, Dictionary(Of String, String))
+  fullName.vb: Sunstealer.FunctionApp1.Middleware.HttpUtils.Put(Of TIn, TOut)(String, TIn, System.Collections.Generic.Dictionary(Of String, String))
+  name.vb: Put(Of TIn, TOut)(String, TIn, Dictionary(Of String, String))
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils.ExecuteAsync``1(System.String,System.String,System.Net.Http.HttpMethod,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  commentId: M:Sunstealer.FunctionApp1.Middleware.HttpUtils.ExecuteAsync``1(System.String,System.String,System.Net.Http.HttpMethod,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  id: ExecuteAsync``1(System.String,System.String,System.Net.Http.HttpMethod,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  parent: Sunstealer.FunctionApp1.Middleware.HttpUtils
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync<TOut>(string, string?, HttpMethod, Dictionary<string, string>?, string)
+  nameWithType: HttpUtils.ExecuteAsync<TOut>(string, string?, HttpMethod, Dictionary<string, string>?, string)
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils.ExecuteAsync<TOut>(string, string?, System.Net.Http.HttpMethod, System.Collections.Generic.Dictionary<string, string>?, string)
+  type: Method
+  source:
+    id: ExecuteAsync
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Middleware\HttpUtils.cs
+    startLine: 61
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Middleware
+  summary: ''
+  example: []
+  syntax:
+    content: public static Task<TOut> ExecuteAsync<TOut>(string url, string? json, HttpMethod method, Dictionary<string, string>? headers = null, string contentType = "application/json")
+    parameters:
+    - id: url
+      type: System.String
+      description: ''
+    - id: json
+      type: System.String
+      description: ''
+    - id: method
+      type: System.Net.Http.HttpMethod
+      description: ''
+    - id: headers
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: ''
+    - id: contentType
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: TOut
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{{TOut}}
+      description: ''
+    content.vb: Public Shared Function ExecuteAsync(Of TOut)(url As String, json As String, method As HttpMethod, headers As Dictionary(Of String, String) = Nothing, contentType As String = "application/json") As Task(Of TOut)
+  overload: Sunstealer.FunctionApp1.Middleware.HttpUtils.ExecuteAsync*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: HttpUtils.ExecuteAsync(Of TOut)(String, String, HttpMethod, Dictionary(Of String, String), String)
+  fullName.vb: Sunstealer.FunctionApp1.Middleware.HttpUtils.ExecuteAsync(Of TOut)(String, String, System.Net.Http.HttpMethod, System.Collections.Generic.Dictionary(Of String, String), String)
+  name.vb: ExecuteAsync(Of TOut)(String, String, HttpMethod, Dictionary(Of String, String), String)
+references:
+- uid: Sunstealer.FunctionApp1.Middleware
+  commentId: N:Sunstealer.FunctionApp1.Middleware
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.Middleware
+  nameWithType: Sunstealer.FunctionApp1.Middleware
+  fullName: Sunstealer.FunctionApp1.Middleware
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Middleware
+    name: Middleware
+    href: Sunstealer.FunctionApp1.Middleware.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Middleware
+    name: Middleware
+    href: Sunstealer.FunctionApp1.Middleware.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils.Delete*
+  commentId: Overload:Sunstealer.FunctionApp1.Middleware.HttpUtils.Delete
+  href: Sunstealer.FunctionApp1.Middleware.HttpUtils.html#Sunstealer_FunctionApp1_Middleware_HttpUtils_Delete_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
+  name: Delete
+  nameWithType: HttpUtils.Delete
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils.Delete
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, string>
+  nameWithType: Dictionary<string, string>
+  fullName: System.Collections.Generic.Dictionary<string, string>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{Newtonsoft.Json.Linq.JObject}
+  commentId: T:System.Threading.Tasks.Task{Newtonsoft.Json.Linq.JObject}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<JObject>
+  nameWithType: Task<JObject>
+  fullName: System.Threading.Tasks.Task<Newtonsoft.Json.Linq.JObject>
+  nameWithType.vb: Task(Of JObject)
+  fullName.vb: System.Threading.Tasks.Task(Of Newtonsoft.Json.Linq.JObject)
+  name.vb: Task(Of JObject)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Newtonsoft.Json.Linq.JObject
+    name: JObject
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Newtonsoft.Json.Linq.JObject
+    name: JObject
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils.Get*
+  commentId: Overload:Sunstealer.FunctionApp1.Middleware.HttpUtils.Get
+  href: Sunstealer.FunctionApp1.Middleware.HttpUtils.html#Sunstealer_FunctionApp1_Middleware_HttpUtils_Get__1_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
+  name: Get
+  nameWithType: HttpUtils.Get
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils.Get
+- uid: System.Threading.Tasks.Task{{TOut}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TOut>
+  nameWithType: Task<TOut>
+  fullName: System.Threading.Tasks.Task<TOut>
+  nameWithType.vb: Task(Of TOut)
+  fullName.vb: System.Threading.Tasks.Task(Of TOut)
+  name.vb: Task(Of TOut)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TOut
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOut
+  - name: )
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils.Post*
+  commentId: Overload:Sunstealer.FunctionApp1.Middleware.HttpUtils.Post
+  href: Sunstealer.FunctionApp1.Middleware.HttpUtils.html#Sunstealer_FunctionApp1_Middleware_HttpUtils_Post__2_System_String___0_System_Collections_Generic_Dictionary_System_String_System_String__
+  name: Post
+  nameWithType: HttpUtils.Post
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils.Post
+- uid: '{TIn}'
+  commentId: '!:TIn'
+  definition: TIn
+  name: TIn
+  nameWithType: TIn
+  fullName: TIn
+- uid: TIn
+  name: TIn
+  nameWithType: TIn
+  fullName: TIn
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils.Put*
+  commentId: Overload:Sunstealer.FunctionApp1.Middleware.HttpUtils.Put
+  href: Sunstealer.FunctionApp1.Middleware.HttpUtils.html#Sunstealer_FunctionApp1_Middleware_HttpUtils_Put__2_System_String___0_System_Collections_Generic_Dictionary_System_String_System_String__
+  name: Put
+  nameWithType: HttpUtils.Put
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils.Put
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Sunstealer.FunctionApp1.Middleware.HttpUtils.ExecuteAsync*
+  commentId: Overload:Sunstealer.FunctionApp1.Middleware.HttpUtils.ExecuteAsync
+  href: Sunstealer.FunctionApp1.Middleware.HttpUtils.html#Sunstealer_FunctionApp1_Middleware_HttpUtils_ExecuteAsync__1_System_String_System_String_System_Net_Http_HttpMethod_System_Collections_Generic_Dictionary_System_String_System_String__System_String_
+  name: ExecuteAsync
+  nameWithType: HttpUtils.ExecuteAsync
+  fullName: Sunstealer.FunctionApp1.Middleware.HttpUtils.ExecuteAsync
+- uid: System.Net.Http.HttpMethod
+  commentId: T:System.Net.Http.HttpMethod
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod
+  name: HttpMethod
+  nameWithType: HttpMethod
+  fullName: System.Net.Http.HttpMethod
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http

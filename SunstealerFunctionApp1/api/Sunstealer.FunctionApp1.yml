@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1
+  commentId: N:Sunstealer.FunctionApp1
+  id: Sunstealer.FunctionApp1
+  children:
+  - Sunstealer.FunctionApp1.Program
+  langs:
+  - csharp
+  - vb
+  name: Sunstealer.FunctionApp1
+  nameWithType: Sunstealer.FunctionApp1
+  fullName: Sunstealer.FunctionApp1
+  type: Namespace
+  assemblies:
+  - SunstealerFunctionApp1
+references:
+- uid: Sunstealer.FunctionApp1.Program
+  commentId: T:Sunstealer.FunctionApp1.Program
+  href: Sunstealer.FunctionApp1.Program.html
+  name: Program
+  nameWithType: Program
+  fullName: Sunstealer.FunctionApp1.Program

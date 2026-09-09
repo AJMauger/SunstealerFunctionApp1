@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunslealer.FunctionApp1.Tests
+  commentId: N:Sunslealer.FunctionApp1.Tests
+  id: Sunslealer.FunctionApp1.Tests
+  children:
+  - Sunslealer.FunctionApp1.Tests.UnitTest1
+  langs:
+  - csharp
+  - vb
+  name: Sunslealer.FunctionApp1.Tests
+  nameWithType: Sunslealer.FunctionApp1.Tests
+  fullName: Sunslealer.FunctionApp1.Tests
+  type: Namespace
+  assemblies:
+  - SunstealerFunctionApp1.Tests
+references:
+- uid: Sunslealer.FunctionApp1.Tests.UnitTest1
+  commentId: T:Sunslealer.FunctionApp1.Tests.UnitTest1
+  href: Sunslealer.FunctionApp1.Tests.UnitTest1.html
+  name: UnitTest1
+  nameWithType: UnitTest1
+  fullName: Sunslealer.FunctionApp1.Tests.UnitTest1

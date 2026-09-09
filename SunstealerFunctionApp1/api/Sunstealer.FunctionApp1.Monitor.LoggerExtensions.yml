@@ -1,0 +1,667 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  commentId: T:Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  id: LoggerExtensions
+  parent: Sunstealer.FunctionApp1.Monitor
+  children:
+  - Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogDebug(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  - Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger,System.Exception,System.String,System.String,System.Int32)
+  - Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  - Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogInformation(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  - Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogTrace(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  - Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogWarning(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: LoggerExtensions
+  nameWithType: LoggerExtensions
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  type: Class
+  source:
+    id: LoggerExtensions
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Monitor\LoggerExtensions.cs
+    startLine: 11
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Monitor
+  summary: >-
+    LoggerExtensions extends (overrides) the Microsoft Logging Framework.
+
+    This allows the application to log messages with source file, line number, Global and Application attributes via Open Telemetry.
+  example: []
+  syntax:
+    content: public static class LoggerExtensions
+    content.vb: Public Module LoggerExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogDebug(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  commentId: M:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogDebug(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  id: LogDebug(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: LogDebug(ILogger, string, string, int)
+  nameWithType: LoggerExtensions.LogDebug(ILogger, string, string, int)
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogDebug(Microsoft.Extensions.Logging.ILogger, string, string, int)
+  type: Method
+  source:
+    id: LogDebug
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Monitor\LoggerExtensions.cs
+    startLine: 20
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Monitor
+  summary: The LogDebug override.
+  example: []
+  syntax:
+    content: public static void LogDebug(this ILogger logger, string message, string filePath = "", int lineNumber = 0)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+      description: ''
+    - id: message
+      type: System.String
+      description: ''
+    - id: filePath
+      type: System.String
+      description: ''
+    - id: lineNumber
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub LogDebug(logger As ILogger, message As String, filePath As String = "", lineNumber As Integer = 0)
+  overload: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogDebug*
+  nameWithType.vb: LoggerExtensions.LogDebug(ILogger, String, String, Integer)
+  fullName.vb: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogDebug(Microsoft.Extensions.Logging.ILogger, String, String, Integer)
+  name.vb: LogDebug(ILogger, String, String, Integer)
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogInformation(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  commentId: M:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogInformation(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  id: LogInformation(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: LogInformation(ILogger, string, string, int)
+  nameWithType: LoggerExtensions.LogInformation(ILogger, string, string, int)
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogInformation(Microsoft.Extensions.Logging.ILogger, string, string, int)
+  type: Method
+  source:
+    id: LogInformation
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Monitor\LoggerExtensions.cs
+    startLine: 45
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Monitor
+  summary: The LogInformation override.
+  example: []
+  syntax:
+    content: public static void LogInformation(this ILogger logger, string message, string filePath = "", int lineNumber = 0)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+      description: ''
+    - id: message
+      type: System.String
+      description: ''
+    - id: filePath
+      type: System.String
+      description: ''
+    - id: lineNumber
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub LogInformation(logger As ILogger, message As String, filePath As String = "", lineNumber As Integer = 0)
+  overload: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogInformation*
+  nameWithType.vb: LoggerExtensions.LogInformation(ILogger, String, String, Integer)
+  fullName.vb: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogInformation(Microsoft.Extensions.Logging.ILogger, String, String, Integer)
+  name.vb: LogInformation(ILogger, String, String, Integer)
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogWarning(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  commentId: M:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogWarning(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  id: LogWarning(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: LogWarning(ILogger, string, string, int)
+  nameWithType: LoggerExtensions.LogWarning(ILogger, string, string, int)
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogWarning(Microsoft.Extensions.Logging.ILogger, string, string, int)
+  type: Method
+  source:
+    id: LogWarning
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Monitor\LoggerExtensions.cs
+    startLine: 70
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Monitor
+  summary: The LogWarning override.
+  example: []
+  syntax:
+    content: public static void LogWarning(this ILogger logger, string message, string filePath = "", int lineNumber = 0)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+      description: ''
+    - id: message
+      type: System.String
+      description: ''
+    - id: filePath
+      type: System.String
+      description: ''
+    - id: lineNumber
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub LogWarning(logger As ILogger, message As String, filePath As String = "", lineNumber As Integer = 0)
+  overload: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogWarning*
+  nameWithType.vb: LoggerExtensions.LogWarning(ILogger, String, String, Integer)
+  fullName.vb: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogWarning(Microsoft.Extensions.Logging.ILogger, String, String, Integer)
+  name.vb: LogWarning(ILogger, String, String, Integer)
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  commentId: M:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  id: LogError(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: LogError(ILogger, string, string, int)
+  nameWithType: LoggerExtensions.LogError(ILogger, string, string, int)
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger, string, string, int)
+  type: Method
+  source:
+    id: LogError
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Monitor\LoggerExtensions.cs
+    startLine: 95
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Monitor
+  summary: The LogError override.
+  example: []
+  syntax:
+    content: public static void LogError(this ILogger logger, string message, string filePath = "", int lineNumber = 0)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+      description: ''
+    - id: message
+      type: System.String
+      description: ''
+    - id: filePath
+      type: System.String
+      description: ''
+    - id: lineNumber
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub LogError(logger As ILogger, message As String, filePath As String = "", lineNumber As Integer = 0)
+  overload: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError*
+  nameWithType.vb: LoggerExtensions.LogError(ILogger, String, String, Integer)
+  fullName.vb: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger, String, String, Integer)
+  name.vb: LogError(ILogger, String, String, Integer)
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger,System.Exception,System.String,System.String,System.Int32)
+  commentId: M:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger,System.Exception,System.String,System.String,System.Int32)
+  id: LogError(Microsoft.Extensions.Logging.ILogger,System.Exception,System.String,System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: LogError(ILogger, Exception, string, string, int)
+  nameWithType: LoggerExtensions.LogError(ILogger, Exception, string, string, int)
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger, System.Exception, string, string, int)
+  type: Method
+  source:
+    id: LogError
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Monitor\LoggerExtensions.cs
+    startLine: 121
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Monitor
+  summary: The LogError (Exception) override.
+  example: []
+  syntax:
+    content: public static void LogError(this ILogger logger, Exception exception, string message, string filePath = "", int lineNumber = 0)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+      description: ''
+    - id: exception
+      type: System.Exception
+      description: ''
+    - id: message
+      type: System.String
+      description: ''
+    - id: filePath
+      type: System.String
+      description: ''
+    - id: lineNumber
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub LogError(logger As ILogger, exception As Exception, message As String, filePath As String = "", lineNumber As Integer = 0)
+  overload: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError*
+  nameWithType.vb: LoggerExtensions.LogError(ILogger, Exception, String, String, Integer)
+  fullName.vb: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger, System.Exception, String, String, Integer)
+  name.vb: LogError(ILogger, Exception, String, String, Integer)
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogTrace(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  commentId: M:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogTrace(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  id: LogTrace(Microsoft.Extensions.Logging.ILogger,System.String,System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Sunstealer.FunctionApp1.Monitor.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: LogTrace(ILogger, string, string, int)
+  nameWithType: LoggerExtensions.LogTrace(ILogger, string, string, int)
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogTrace(Microsoft.Extensions.Logging.ILogger, string, string, int)
+  type: Method
+  source:
+    id: LogTrace
+    path: C:\Users\ajm\Documents\projects\ajm.azure\SunstealerFunctionApp1\Monitor\LoggerExtensions.cs
+    startLine: 148
+  assemblies:
+  - SunstealerFunctionApp1
+  namespace: Sunstealer.FunctionApp1.Monitor
+  summary: The LogTrace override.
+  example: []
+  syntax:
+    content: public static void LogTrace(this ILogger logger, string message, string filePath = "", int lineNumber = 0)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger
+      description: ''
+    - id: message
+      type: System.String
+      description: ''
+    - id: filePath
+      type: System.String
+      description: ''
+    - id: lineNumber
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub LogTrace(logger As ILogger, message As String, filePath As String = "", lineNumber As Integer = 0)
+  overload: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogTrace*
+  nameWithType.vb: LoggerExtensions.LogTrace(ILogger, String, String, Integer)
+  fullName.vb: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogTrace(Microsoft.Extensions.Logging.ILogger, String, String, Integer)
+  name.vb: LogTrace(ILogger, String, String, Integer)
+references:
+- uid: Sunstealer.FunctionApp1.Monitor
+  commentId: N:Sunstealer.FunctionApp1.Monitor
+  href: Sunstealer.html
+  name: Sunstealer.FunctionApp1.Monitor
+  nameWithType: Sunstealer.FunctionApp1.Monitor
+  fullName: Sunstealer.FunctionApp1.Monitor
+  spec.csharp:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Monitor
+    name: Monitor
+    href: Sunstealer.FunctionApp1.Monitor.html
+  spec.vb:
+  - uid: Sunstealer
+    name: Sunstealer
+    href: Sunstealer.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1
+    name: FunctionApp1
+    href: Sunstealer.FunctionApp1.html
+  - name: .
+  - uid: Sunstealer.FunctionApp1.Monitor
+    name: Monitor
+    href: Sunstealer.FunctionApp1.Monitor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogDebug*
+  commentId: Overload:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogDebug
+  href: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.html#Sunstealer_FunctionApp1_Monitor_LoggerExtensions_LogDebug_Microsoft_Extensions_Logging_ILogger_System_String_System_String_System_Int32_
+  name: LogDebug
+  nameWithType: LoggerExtensions.LogDebug
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogDebug
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogInformation*
+  commentId: Overload:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogInformation
+  href: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.html#Sunstealer_FunctionApp1_Monitor_LoggerExtensions_LogInformation_Microsoft_Extensions_Logging_ILogger_System_String_System_String_System_Int32_
+  name: LogInformation
+  nameWithType: LoggerExtensions.LogInformation
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogInformation
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogWarning*
+  commentId: Overload:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogWarning
+  href: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.html#Sunstealer_FunctionApp1_Monitor_LoggerExtensions_LogWarning_Microsoft_Extensions_Logging_ILogger_System_String_System_String_System_Int32_
+  name: LogWarning
+  nameWithType: LoggerExtensions.LogWarning
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogWarning
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError*
+  commentId: Overload:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError
+  href: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.html#Sunstealer_FunctionApp1_Monitor_LoggerExtensions_LogError_Microsoft_Extensions_Logging_ILogger_System_String_System_String_System_Int32_
+  name: LogError
+  nameWithType: LoggerExtensions.LogError
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogError
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogTrace*
+  commentId: Overload:Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogTrace
+  href: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.html#Sunstealer_FunctionApp1_Monitor_LoggerExtensions_LogTrace_Microsoft_Extensions_Logging_ILogger_System_String_System_String_System_Int32_
+  name: LogTrace
+  nameWithType: LoggerExtensions.LogTrace
+  fullName: Sunstealer.FunctionApp1.Monitor.LoggerExtensions.LogTrace
