@@ -8,11 +8,11 @@ public class FixtureFunctionHost : IDisposable
     /// <summary>
     /// 
     /// </summary>
-    public string _baseUrl { get; set; }
+    public string _baseUrl { get; }
     /// <summary>
     /// 
     /// </summary>
-    public string _build { get; set; } = "Release";
+    private string _build { get; set; } = "Release";
     /// <summary>
     /// 
     /// </summary>
@@ -24,7 +24,7 @@ public class FixtureFunctionHost : IDisposable
     /// <summary>
     /// See lauchSettings.json.
     /// </summary>
-    public ushort _port { get; } = 7079;
+    private ushort _port { get; } = 7079;
 
     /// <summary>
     /// 
@@ -36,8 +36,14 @@ public class FixtureFunctionHost : IDisposable
 #if DEBUG
         _build = "Debug";
 #endif
+        var localAppData = Environment.GetEnvironmentVariable("LocalAppData");
 
-        var functionHostFolder = $@"{Environment.GetEnvironmentVariable("LocalAppData")}\AzureFunctionsTools\Releases\4.132.0\cli_x64";
+        if (string.IsNullOrEmpty(localAppData) || localAppData.Contains(".."))
+        {
+            throw new ArgumentException("LocalAppData");
+        }
+
+        var functionHostFolder = $@"{localAppData}\AzureFunctionsTools\Releases\4.132.0\cli_x64";
         var version = $"{Environment.Version.Major}.{Environment.Version.Minor}";
 
         var startInfo = new ProcessStartInfo
@@ -46,12 +52,17 @@ public class FixtureFunctionHost : IDisposable
             // ajm: Arguments = @$"/K {functionHostFolder}\func.exe host start --port {_port}",
 
             FileName = @$"{functionHostFolder}\func.exe",
-            Arguments = @$"host start --port {_port}",
+            // ajm: Arguments = @$"host start --port {_port}",
 
             WorkingDirectory = AppContext.BaseDirectory.Replace(".Tests", ""),
-            UseShellExecute = true,
+            UseShellExecute = false,
             CreateNoWindow = false
         };
+
+        startInfo.ArgumentList.Add("host");
+        startInfo.ArgumentList.Add("start");
+        startInfo.ArgumentList.Add("--port");
+        startInfo.ArgumentList.Add(_port.ToString());
 
         _hostProcess = new Process
         {
