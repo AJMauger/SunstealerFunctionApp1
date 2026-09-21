@@ -66,6 +66,9 @@ public class ApplicationService: IApplicationService, IHostedService
     /// </summary>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
+    /// <remarks>
+    /// Unit test: <xref href="Sunslealer.FunctionApp1.Tests.UnitTest1.Test1">Sunslealer.FunctionApp1.Tests.UnitTest1.Test1()</xref>
+    /// </remarks>
     public Task StartAsync(CancellationToken cancellationToken)
     {
         try {
