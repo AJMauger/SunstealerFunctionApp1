@@ -1,4 +1,4 @@
-﻿using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions;
+using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Configurations;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums;
 using Microsoft.OpenApi.Any;
@@ -22,89 +22,33 @@ public class DocumentFilter : IDocumentFilter
         var schemas = document.Components.Schemas;
         foreach (var schema in schemas)
         {
-            if (schema.Key == "DeleteRequestModel")
+            if (schema.Key == "table1")
             {
-                var transactionId = new OpenApiString(Guid.NewGuid().ToString());
                 schema.Value.Example = new OpenApiArray() {
                     new OpenApiObject()
                     {
-                        ["Key"] = new OpenApiInteger(1),
-                        ["Value"] = new OpenApiString("InsertRequestModel")
+                        ["UUID"] = new OpenApiInteger(1),
+                        ["Encrypted1"] = new OpenApiString("DecryptedText"),
+                        ["Date1"] = new OpenApiDateTime(DateTime.Now),
+                        ["Number1"] = new OpenApiInteger(1),
+                        ["Text1"] = new OpenApiString("ClearText")
                     }
                 };
-            }
-            if (schema.Key == "DeleteResponseModel")
-            {
-                schema.Value.Example = new OpenApiArray() {
-                    new OpenApiObject()
-                    {
-                        ["Key"] = new OpenApiInteger(1),
-                        ["Value"] = new OpenApiString("InsertRequestModel")
-                    }
-                };
-            }
-            if (schema.Key == "InsertRequestModel")
-            {
-                var transactionId = new OpenApiString(Guid.NewGuid().ToString());
-                schema.Value.Example = new OpenApiArray() {
-                    new OpenApiObject()
-                    {
-                        ["Key"] = new OpenApiInteger(1),
-                        ["Value"] = new OpenApiString("InsertRequestModel")
-                    }
-                };
-            }
-            if (schema.Key == "InsertResponseModel")
-            {
-                schema.Value.Example = new OpenApiArray() {
-                    new OpenApiObject()
-                    {
-                        ["Key"] = new OpenApiInteger(1),
-                        ["Value"] = new OpenApiString("InsertResponseModel")
-                    }
-                }; 
-            }
-            if (schema.Key == "UpdateRequestModel")
-            {
-                schema.Value.Example = new OpenApiArray() {
-                    new OpenApiObject()
-                    {
-                        ["Key"] = new OpenApiInteger(1),
-                        ["Value"] = new OpenApiString("UpdateRequestModel")
-                    }
-                };
-            }
-            if (schema.Key == "UpdateResponseModel")
-            {
-                schema.Value.Example = new OpenApiArray() {
-                    new OpenApiObject()
-                    {
-                        ["Key"] = new OpenApiInteger(1),
-                        ["Value"] = new OpenApiString("UpdateResponseModel")
-                    }
-                };
-            }
-            if (schema.Key == "SelectRequestModel")
-            {
-                schema.Value.Example = new OpenApiArray() {
-                    new OpenApiObject()
-                    {
-                        ["Key"] = new OpenApiInteger(1),
-                        ["Value"] = new OpenApiString("SelectRequestModel")
-                    }
-                };
-            }
-            if (schema.Key == "serachResponseModel")
-            {
-                schema.Value.Example = new OpenApiArray() {
-                    new OpenApiObject()
-                    {
-                        ["Key"] = new OpenApiInteger(1),
-                        ["Value"] = new OpenApiString("SelectRequestModel")
-                    }
-                };
+
+                SetPropertyDescription(schema.Value.Properties, "uuid", "The unique identifier for the record.");
+                SetPropertyDescription(schema.Value.Properties, "encrypted1", "Contains the decrypted evaluation string text.");
+                SetPropertyDescription(schema.Value.Properties, "date1", "The timestamp when the transaction was logged.");
+                SetPropertyDescription(schema.Value.Properties, "number1", "A numeric metric field.");
+                SetPropertyDescription(schema.Value.Properties, "text1", "The unencrypted raw string data.");
             }
         }
+    }
+
+    private void SetPropertyDescription(IDictionary<string, OpenApiSchema> properties, string key, string description)
+    {
+        properties.TryGetValue(key, out var propertySchema);
+        propertySchema?.Description = description;
+
     }
 }
 
